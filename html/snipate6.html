@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+      :root {
+        --font1: "Heebo", sans-serif;
+        --font2: "Fira Sans Extra Condensed", sans-serif;
+        --font3: "Roboto", sans-serif;
+
+        --btnbg: cornflowerblue;
+        --btnfontcolor: rgb(61, 61, 61);
+        --btnfontcolorhover: rgb(255, 255, 255);
+        --btnbghover: cornflowerblue;
+        --btnactivefs: cornflowerblue;
+
+        --label-index: #960796;
+        --danger-index: cornflowerblue;
+        /* PAGINATE */
+        --link-color: #000;
+        --link-color-hover: #fff;
+        --bg-content-color: cornflowerblue;
+      }
+
+      .container-fluid {
+        max-width: 1400px;
+      }
+
+      .card {
+        background: #fff;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+          0.3s box-shadow,
+          0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+        border: 0;
+        border-radius: 1rem;
+      }
+
+      .card-img,
+      .card-img-top {
+        border-top-left-radius: calc(1rem - 1px);
+        border-top-right-radius: calc(1rem - 1px);
+      }
+
+      .card h5 {
+        overflow: hidden;
+        height: 55px;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+
+      .card h5 a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .card-img-top {
+        width: 100%;
+        min-height: 350px;
+        max-height: 350px;
+        object-fit: contain;
+        padding: 20px;
+      }
+
+      .card h2 {
+        font-size: 1rem;
+      }
+
+      .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12),
+          0 4px 8px rgba(0, 0, 0, 0.06);
+          border: 3px solid  #ffffff;
+          transition: all 0.20s ease-in-out;
+      }
+      body
+      {
+       background-color: white
+      }
+      /* Centered text */
+      .label-top {
+        position: absolute;
+        background-color:cornflowerblue ;
+        color: #fff;
+        top: 8px;
+        right: 8px;
+        padding: 5px 10px 5px 10px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border-radius: 3px;
+        text-transform: uppercase;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        font-size: 1rem;
+        font-weight: 900;
+        background: #8bc34a;
+        line-height: 90px;
+        text-align: center;
+        color: white;
+      }
+
+      .top-right span {
+        display: inline-block;
+        vertical-align: middle;
+        /* line-height: normal; */
+        /* padding: 0 25px; */
+      }
+
+      .aff-link {
+        /* text-decoration: overline; */
+        font-weight: 500;
+      }
+
+      .over-bg {
+        background: cornflowerblue;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border-radius: 10px;
+      }
+      .bold-btn {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 5px 50px 5px 50px;
+      }
+      .box .btn {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 1025px) {
+        .btn {
+          padding: 5px 40px 5px 40px;
+        }
+      }
+      @media (max-width: 250px) {
+        .btn {
+          padding: 5px 30px 5px 30px;
+        }
+      }
+
+      /* START BUTTON */
+      .btn-warning {
+        background: cornflowerblue;
+        color: var(--btnfontcolor);
+        fill: #ffffff;
+        border: none;
+        text-decoration: none;
+        outline: 0;
+        /* box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25); */
+        border-radius: 100px;
+      }
+      .btn-warning:hover {
+        background: cornflowerblue;
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+      }
+      .btn-check:focus + .btn-warning,
+      .btn-warning:focus {
+        background: cornflowerblue;
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+      }
+      .btn-warning:active:focus {
+        box-shadow: 0 0 0 0.25rem var(--btnactivefs);
+      }
+      .btn-warning:active {
+        background: cornflowerblue;
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+      }
+
+      /* END BUTTON */
+
+      .bg-primary{
+        font-size: 1rem;
+        background-color: cornflowerblue;
+        
+      }
+      .bg-danger {
+        font-size: 1rem;
+      }
+
+      .price-hp {
+        font-size: 1rem;
+        font-weight: 600;
+        color: darkgray;
+      }
+
+      .amz-hp {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: darkgray;
+      }
+
+      .fa-question-circle:before {
+        /* content: "\f059"; */
+        color: darkgray;
+      }
+
+      .fa-heart:before {
+        color: cornflowerblue;
+      }
+      .fa-chevron-circle-right:before {
+        color: darkgray;
+      }
+      .card
+      {
+        background-image: url('../images/bg1.jpg');
+        
+      }
+      a
+      {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center mt-5">Bootstrap 5 Product Card Template.</h1>
+    <div
+      class="container-fluid bg-trasparent my-4 p-3"
+      style="position: relative"
+    >
+      <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+        <div class="col hp">
+          <div class="card h-100 shadow-sm">
+            <a href="#">
+              <img
+                src="../images/watch1.png"
+                class="card-img-top"
+                alt="product.title"
+              />
+            </a>
+
+            <div class="label-top shadow-sm">
+              <a class="text-white" href="#">Titen</a>
+            </div>
+            <div class="card-body">
+              <div class="clearfix mb-3">
+                <span class="float-start badge rounded-pill bg-primary "
+                  ><i class="fa-solid fa-indian-rupee-sign"></i> 1,20,000 </span
+                >
+
+                <span class="float-end"
+                  ><a href="#" class="small text-muted text-uppercase aff-link"
+                    >reviews</a
+                  ></span
+                >
+              </div>
+              <h5 class="card-title">
+                <a target="_blank" href="#"class="text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio a, nesciunt eveniet deleniti molestiae alias est id vitae. Quasi nostrum ab distinctio repellat ullam accusantium laudantium ad est, optio voluptatem.</a
+                >
+              </h5>
+
+              <div class="d-grid gap-2 my-4">
+                <a href="#" class="btn btn-warning bold-btn">add to cart</a>
+              </div>
+              <div class="clearfix mb-1">
+                <span class="float-start"
+                  ><a href="#"><i class="fas fa-question-circle"></i></a
+                ></span>
+
+                <span class="float-end">
+                  <i class="far fa-heart" style="cursor: pointer"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col hp">
+          <div class="card h-100 shadow-sm">
+            <a href="#">
+              <img
+                src="../images/watch2.png"
+                class="card-img-top"
+                alt="product.title"
+              />
+            </a>
+
+            <div class="label-top shadow-sm">
+              <a class="text-white" href="#">citizen</a>
+            </div>
+            <div class="card-body">
+              <div class="clearfix mb-3">
+                <span class="float-start badge rounded-pill bg-primary"
+                  ><i class="fa-solid fa-indian-rupee-sign"></i> 1,50,000 </span
+                >
+
+                <span class="float-end"
+                  ><a href="#" class="small text-muted text-uppercase aff-link"
+                    >reviews</a
+                  ></span
+                >
+              </div>
+              <h5 class="card-title">
+                <a target="_blank" href="#"class="text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio a, nesciunt eveniet deleniti molestiae alias est id vitae. Quasi nostrum ab distinctio repellat ullam accusantium laudantium ad est, optio voluptatem.</a
+                >
+              </h5>
+
+              <div class="d-grid gap-2 my-4">
+                <a href="#" class="btn btn-warning bold-btn">add to cart</a>
+              </div>
+              <div class="clearfix mb-1">
+                <span class="float-start"
+                  ><a href="#"><i class="fas fa-question-circle"></i></a
+                ></span>
+
+                <span class="float-end">
+                  <i class="far fa-heart" style="cursor: pointer"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col hp">
+          <div class="card h-100 shadow-sm">
+            <a href="#">
+              <img
+                src="../images/watch3.png"
+                class="card-img-top"
+                alt="product.title"
+              />
+            </a>
+
+            <div class="label-top shadow-sm">
+              <a class="text-white" href="#">G-Shock</a>
+            </div>
+            <div class="card-body">
+              <div class="clearfix mb-3">
+                <span class="float-start badge rounded-pill bg-primary"
+                  ><i class="fa-solid fa-indian-rupee-sign"></i> 2,10,000 </span
+                >
+
+                <span class="float-end"
+                  ><a href="#" class="small text-muted text-uppercase aff-link"
+                    >reviews</a
+                  ></span
+                >
+              </div>
+              <h5 class="card-title">
+                <a target="_blank" href="#"class="text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio a, nesciunt eveniet deleniti molestiae alias est id vitae. Quasi nostrum ab distinctio repellat ullam accusantium laudantium ad est, optio voluptatem.</a
+                >
+              </h5>
+
+              <div class="d-grid gap-2 my-4">
+                <a href="#" class="btn btn-warning bold-btn">add to cart</a>
+              </div>
+              <div class="clearfix mb-1">
+                <span class="float-start"
+                  ><a href="#"><i class="fas fa-question-circle"></i></a
+                ></span>
+
+                <span class="float-end">
+                  <i class="far fa-heart" style="cursor: pointer"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col hp">
+          <div class="card h-100 shadow-sm">
+            <a href="#">
+              <img
+                src="../images/watch4.png"
+                class="card-img-top"
+                alt="product.title"
+              />
+            </a>
+            <!-- <div class="label-top shadow-sm">Asus Rog</div>  -->
+            <div class="label-top shadow-sm">
+              <a class="text-white" href="#">Aspire Ferrari</a>
+            </div>
+            <div class="card-body">
+              <div class="clearfix mb-3">
+                <span class="float-start badge rounded-pill bg-primary"
+                  ><i class="fa-solid fa-indian-rupee-sign"></i> 1,00,000 </span
+                >
+
+                <span class="float-end"
+                  ><a href="#" class="small text-muted text-uppercase aff-link"
+                    >reviews</a
+                  ></span
+                >
+              </div>
+              <h5 class="card-title">
+                <a target="_blank" href="#"class="text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate mollitia magnam quibusdam, laborum molestiae nesciunt modi voluptatum ex quia commodi vel reprehenderit, dicta praesentium impedit atque libero ad! Sit?</a
+                >
+              </h5>
+
+              <div class="d-grid gap-2 my-4">
+                <a href="#" class="btn btn-warning bold-btn">add to cart</a>
+              </div>
+              <div class="clearfix mb-1">
+                <span class="float-start"
+                  ><a href="#"><i class="fas fa-question-circle"></i></a
+                ></span>
+
+                <span class="float-end">
+                  <i class="far fa-heart" style="cursor: pointer"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://kit.fontawesome.com/266b76cb57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
