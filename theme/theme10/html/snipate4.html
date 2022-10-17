@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+    />
+    <title>Card Flip Animation using JavaScript Code</title>
+    <!-- https://www.codehim.com/animation-effects/card-flip-animation-using-javascript-code/ -->
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap");
+
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      html {
+        font-size: 48.5%;
+      }
+
+      body {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        line-height: 1.7;
+        padding: 3rem;
+        box-sizing: border-box;
+      }
+
+      .grids {
+        max-width: 136rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+      }
+
+      .card-one {
+        grid-column: 1/4;
+      }
+
+      .card-two {
+        grid-column: 1/4;
+      }
+
+      .card-three {
+        grid-column: 1/4;
+      }
+
+      .card-four {
+        grid-column: 1/4;
+      }
+
+      .card-five {
+        grid-column: 1/4;
+      }
+
+      .card-six {
+        grid-column: 1/4;
+      }
+
+      .card-seven {
+        grid-column: 1/4;
+      }
+
+      .card {
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position: relative;
+        height: 25rem;
+        width: 100%;
+        transition: all ease-in-out 400ms;
+        cursor: pointer;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card:active {
+        transform: translateY(-1px);
+      }
+
+      .card__side {
+        transition: all 0.8s ease;
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25rem;
+        width: 100%;
+        backface-visibility: hidden;
+        box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4);
+        
+      }
+
+      .card__side--front {
+        background-color: #2196f3;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card__side--back {
+        background-color: #303f9f;
+        transform: rotateY(180deg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .showGreen {
+        transform: rotateY(-180deg);
+      }
+
+      .showRed {
+        transform: rotateY(0);
+      }
+
+      .text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+      }
+
+      .text-box-top {
+        font-size: 2.2rem;
+        text-shadow: 2px 2px 10px #0000006c;
+        font-weight: 400;
+      }
+
+      .text-box-middle {
+        font-size: 5.5rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 10px #0000006c;
+      }
+
+      .text-box-lower {
+        font-size: 2rem;
+        text-shadow: 2px 2px 10px #0000006c;
+        font-weight: 400;
+      }
+
+      .heading {
+        transition: all 0.6s linear;
+      }
+
+      .hide {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .show {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      #front-1 {
+        background-image: linear-gradient(
+            rgba(204, 30, 88, 0.6),
+            rgba(20, 20, 20, 0.6)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #front-2 {
+        background-image: linear-gradient(
+            rgba(31, 136, 168, 0.767),
+            rgba(14, 46, 65, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #front-3 {
+        background-image: linear-gradient(
+            rgba(84, 86, 175, 0.9),
+            rgba(27, 27, 85, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #front-4 {
+        background-image: linear-gradient(
+            rgba(74, 190, 122, 0.767),
+            rgba(6, 66, 48, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #front-5 {
+        background-image: linear-gradient(
+            rgba(128, 74, 190, 0.767),
+            rgba(42, 6, 66, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #front-6 {
+        background-image: linear-gradient(
+            rgba(214, 21, 86, 0.801),
+            rgba(20, 20, 20, 0.6)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #front-7 {
+        background-image: linear-gradient(
+            rgba(31, 136, 168, 0.767),
+            rgba(14, 46, 65, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      /* Back */
+
+      #back-1 {
+        background-image: linear-gradient(
+            rgba(204, 30, 88, 0.6),
+            rgba(20, 20, 20, 0.6)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #back-2 {
+        background-image: linear-gradient(
+            rgba(31, 136, 168, 0.767),
+            rgba(14, 46, 65, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #back-3 {
+        background-image: linear-gradient(
+            rgba(84, 86, 175, 0.9),
+            rgba(27, 27, 85, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #back-4 {
+        background-image: linear-gradient(
+            rgba(74, 190, 122, 0.767),
+            rgba(6, 66, 48, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #back-5 {
+        background-image: linear-gradient(
+            rgba(128, 74, 190, 0.767),
+            rgba(42, 6, 66, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #back-6 {
+        background-image: linear-gradient(
+            rgba(214, 21, 86, 0.801),
+            rgba(20, 20, 20, 0.6)
+          ),
+          url("../images/img.jpg");
+      }
+
+      #back-7 {
+        background-image: linear-gradient(
+            rgba(31, 136, 168, 0.767),
+            rgba(14, 46, 65, 0.9)
+          ),
+          url("../images/img.jpg");
+      }
+
+      @media screen and (min-width: 1024px) {
+        html {
+          font-size: 62.5%;
+        }
+
+        .grids {
+          max-width: 136rem;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-column-gap: 3rem;
+          grid-row-gap: 3rem;
+        }
+
+        .card-one {
+          grid-column: 1/3;
+        }
+
+        .card-two {
+          grid-column: 3/4;
+        }
+
+        .card-three {
+          grid-column: 1/2;
+        }
+
+        .card-four {
+          grid-column: 2/2;
+        }
+
+        .card-five {
+          grid-column: 3/4;
+        }
+
+        .card-six {
+          grid-column: 1/2;
+        }
+
+        .card-seven {
+          grid-column: 2/4;
+        }
+      }
+      body
+      {
+        background-color: #2c6579;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grids">
+        <div class="card-one">
+          <div class="card">
+            <div class="card__side card__side--front" id="front-1">
+              <div class="text-box">
+                <h3 class="text-box-top">Flipping Cards</h3>
+                <h1 class="text-box-middle">fresh fruit for you.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+            <div class="card__side card__side--back" id="back-1">
+              <div class="text-box">
+                <h3 class="text-box-top">Cards Flipped</h3>
+                <h1 class="text-box-middle">fresh fruit for you.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-two">
+          <div class="card">
+            <div class="card__side card__side--front" id="front-2">
+              <div class="text-box">
+                <h3 class="text-box-top">Flipping Cards</h3>
+                <h1 class="text-box-middle">stay cool.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+            <div class="card__side card__side--back" id="back-2">
+              <div class="text-box">
+                <h3 class="text-box-top">Cards Flipped</h3>
+                <h1 class="text-box-middle">stay cool</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-three">
+          <div class="card">
+            <div class="card__side card__side--front" id="front-3">
+              <div class="text-box">
+                <h3 class="text-box-top">Flipping Cards</h3>
+                <h1 class="text-box-middle">stay cool</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+            <div class="card__side card__side--back" id="back-3">
+              <div class="text-box">
+                <h3 class="text-box-top">Cards Flipped</h3>
+                <h1 class="text-box-middle">stay cool.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-four">
+          <div class="card">
+            <div class="card__side card__side--front" id="front-4">
+              <div class="text-box">
+                <h3 class="text-box-top">Flipping Cards</h3>
+                <h1 class="text-box-middle">stay cool</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+            <div class="card__side card__side--back" id="back-4">
+              <div class="text-box">
+                <h3 class="text-box-top">Cards Flipped</h3>
+                <h1 class="text-box-middle">stay cool</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-five">
+          <div class="card">
+            <div class="card__side card__side--front" id="front-5">
+              <div class="text-box">
+                <h3 class="text-box-top">Flipping Cards</h3>
+                <h1 class="text-box-middle">stay cool.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+            <div class="card__side card__side--back" id="back-5">
+              <div class="text-box">
+                <h3 class="text-box-top">Cards Flipped</h3>
+                <h1 class="text-box-middle">stay cool.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-six">
+          <div class="card">
+            <div class="card__side card__side--front" id="front-6">
+              <div class="text-box">
+                <h3 class="text-box-top">Flipping Cards</h3>
+                <h1 class="text-box-middle">stay cool.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+            <div class="card__side card__side--back" id="back-6">
+              <div class="text-box">
+                <h3 class="text-box-top">Cards Flipped</h3>
+                <h1 class="text-box-middle">stay cool.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-seven">
+          <div class="card">
+            <div class="card__side card__side--front" id="front-7">
+              <div class="text-box">
+                <h3 class="text-box-top">Flipping Cards</h3>
+                <h1 class="text-box-middle">fresh fruit for you.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+            <div class="card__side card__side--back" id="back-7">
+              <div class="text-box">
+                <h3 class="text-box-top">Cards Flipped</h3>
+                <h1 class="text-box-middle">fresh fruit for you.</h1>
+                <h3 class="text-box-lower">(:Freshness is on focus :)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://kit.fontawesome.com/266b76cb57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var flipCheck = 0;
+
+      function rotateCards() {
+        if (flipCheck === 0) {
+          document.getElementById("front-2").classList.add("showGreen");
+          document.getElementById("back-2").classList.add("showRed");
+
+          document.getElementById("front-1").classList.add("showGreen");
+          document.getElementById("back-1").classList.add("showRed");
+
+          flipCheck = 1;
+
+          setTimeout(function () {
+            document.getElementById("front-4").classList.add("showGreen");
+            document.getElementById("back-4").classList.add("showRed");
+
+            document.getElementById("front-3").classList.add("showGreen");
+            document.getElementById("back-3").classList.add("showRed");
+
+            document.getElementById("front-5").classList.add("showGreen");
+            document.getElementById("back-5").classList.add("showRed");
+
+            setTimeout(function () {
+              document.getElementById("front-6").classList.add("showGreen");
+              document.getElementById("back-6").classList.add("showRed");
+
+              document.getElementById("front-7").classList.add("showGreen");
+              document.getElementById("back-7").classList.add("showRed");
+            }, 500);
+          }, 500);
+        } else {
+          document.getElementById("front-2").classList.remove("showGreen");
+          document.getElementById("back-2").classList.remove("showRed");
+
+          document.getElementById("front-1").classList.remove("showGreen");
+          document.getElementById("back-1").classList.remove("showRed");
+
+          flipCheck = 0;
+
+          setTimeout(function () {
+            document.getElementById("front-3").classList.remove("showGreen");
+            document.getElementById("back-3").classList.remove("showRed");
+
+            document.getElementById("front-4").classList.remove("showGreen");
+            document.getElementById("back-4").classList.remove("showRed");
+
+            document.getElementById("front-5").classList.remove("showGreen");
+            document.getElementById("back-5").classList.remove("showRed");
+
+            setTimeout(function () {
+              document.getElementById("front-7").classList.remove("showGreen");
+              document.getElementById("back-7").classList.remove("showRed");
+
+              document.getElementById("front-6").classList.remove("showGreen");
+              document.getElementById("back-6").classList.remove("showRed");
+            }, 500);
+          }, 500);
+        }
+      }
+
+      setInterval(rotateCards, 3000); // Time in milliseconds
+    </script>
+  </body>
+</html>

@@ -36,599 +36,157 @@
     <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 
+    <style>
+        #wrapper
+        {
+            margin-top: 100px;
+        }
+    </style>
+    
 </head>
 
 <body>
 
     <div class="main-wrapper">
+        <!-- Header Section Start -->
+        <div class="header section">
 
-        <!-- Login Header Start -->
-        <div class="section login-header">
-            <!-- Login Header Wrapper Start -->
-            <div class="login-header-wrapper navbar navbar-expand">
+            <!-- Header Main Start -->
+            <div class="header-main">
+                <div class="container">
 
-                <!-- Header Logo Start -->
-                <div class="login-header-logo">
-                    <a href="index.html"><img src="assets/images/logo-icon.png" alt="Logo"></a>
-                </div>
-                <!-- Header Logo End -->
+                    <!-- Header Wrapper Start -->
+                    <div class="header-wrapper">
 
-                <!-- Header Search Start -->
-                <div class="login-header-search dropdown">
-                    <button class="search-toggle" data-bs-toggle="dropdown"><i class="icofont-search"></i></button>
-
-                    <div class="search-input dropdown-menu">
-                        <form action="#">
-                            <input type="text" placeholder="Search here">
-                        </form>
-                    </div>
-
-                </div>
-                <!-- Header Search End -->
-
-                <!-- Header Action Start -->
-                <div class="login-header-action ml-auto">
-
-                    <div class="dropdown">
-                        <button class="action notification" data-bs-toggle="dropdown">
-                            <i class="flaticon-notification"></i>
-                            <span class="active"></span>
-                        </button>
-                        <div class="dropdown-menu dropdown-notification">
-                            <ul class="notification-items-list">
-                                <li class="notification-item">
-                                    <span class="notify-icon bg-success text-white"><i class="icofont-ui-user"></i></span>
-                                    <div class="dropdown-body">
-                                        <a href="#">
-                                            <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <span class="notify-time">3:20 am</span>
-                                </li>
-                                <li class="notification-item">
-                                    <span class="notify-icon bg-success text-white"><i class="icofont-shopping-cart"></i></span>
-                                    <div class="dropdown-body">
-                                        <a href="#">
-                                            <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
-                                        </a>
-                                    </div>
-                                    <span class="notify-time">3:20 am</span>
-                                </li>
-                                <li class="notification-item">
-                                    <span class="notify-icon bg-danger text-white"><i class="icofont-book-mark"></i></span>
-                                    <div class="dropdown-body">
-                                        <a href="#">
-                                            <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <span class="notify-time">3:20 am</span>
-                                </li>
-                                <li class="notification-item">
-                                    <span class="notify-icon bg-success text-white"><i class="icofont-heart-alt"></i></span>
-                                    <div class="dropdown-body">
-                                        <a href="#">
-                                            <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
-                                        </a>
-                                    </div>
-                                    <span class="notify-time">3:20 am</span>
-                                </li>
-                                <li class="notification-item">
-                                    <span class="notify-icon bg-success text-white"><i class="icofont-image"></i></span>
-                                    <div class="dropdown-body">
-                                        <a href="#">
-                                            <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <span class="notify-time">3:20 am</span>
-                                </li>
-                            </ul>
-                            <a class="all-notification" href="#">See all notifications <i class="icofont-simple-right"></i></a>
+                        <!-- Header Logo Start -->
+                        <div class="header-logo">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
                         </div>
-                    </div>
+                        <!-- Header Logo End -->
 
-                    <a class="action author" href="#">
-                        <img src="assets/images/author/author-07.jpg" alt="Author">
-                    </a>
+                        <!-- Header Menu Start -->
+                        <div class="header-menu d-none d-lg-flex">
 
-                    <div class="dropdown">
-                        <button class="action more" data-bs-toggle="dropdown">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="" href="#"><i class="icofont-user"></i> Profile</a></li>
-                            <li><a class="" href="#"><i class="icofont-inbox"></i> Inbox</a></li>
-                            <li><a class="" href="#"><i class="icofont-logout"></i> Sign Out</a></li>
-                        </ul>
+                            <ul class="nav-menu">
+                                <li><a class="active" href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li>
+                                    <a href="#">All Course</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="courses.html">Courses</a></li>
+                                        <li><a href="my-courses.html">My Courses</a></li>
+                                        <li><a href="#">Courses Details</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="courses-details-left-sidebar.html">Courses Details Left Sidebar</a></li>
+                                                <li><a href="courses-details-right-sidebar.html">Courses Details Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Pages </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="after-enroll.html">After Enroll</a></li>
+                                        <li><a href="courses-admin.html">Instructor Dashboard (Course List)</a></li>
+                                        <li><a href="overview.html">Instructor Dashboard (Performance)</a></li>
+                                        <li><a href="students.html">Students</a></li>
+                                        <li><a href="reviews.html">Reviews</a></li>
+                                        <li><a href="engagement.html">Course engagement</a></li>
+                                        <li><a href="traffic-conversion.html">Traffic & conversion</a></li>
+                                        <li><a href="messages.html">Messages</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="404-error.html">404 Error</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="#">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog Details</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
+                                                <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+
+                            <div class="header-btn">
+                                <a class="btn btn-secondary btn-hover-primary" href="login.html">Sign Up</a>
+                            </div>
+
+                        </div>
+                        <!-- Header Menu End -->
+
+                        <!-- Header Toggle Start -->
+                        <div class="header-toggle d-lg-none">
+
+                            <a class="btn btn-secondary btn-hover-primary" href="login.html">Sign Up</a>
+
+                            <a href="#" class="menu-toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <!-- Header Toggle End -->
+
                     </div>
+                    <!-- Header Wrapper End -->
+
                 </div>
-                <!-- Header Action End -->
-
             </div>
-            <!-- Login Header Wrapper End -->
+            <!-- Header Main End -->
+
         </div>
-        <!-- Login Header End -->
+        <!-- Header Section End -->
+
+        
 
         <!-- Courses Admin Start -->
         <div class="section overflow-hidden position-relative" id="wrapper">
 
-            <!-- Sidebar Wrapper Start -->
-            <div class="sidebar-wrapper">
-                <div class="menu-list">
-                    <a class="active" href="courses-admin.html"><img src="assets/images/menu-icon/icon-1.png" alt="Icon"></a>
-                    <a href="messages.html"><img src="assets/images/menu-icon/icon-2.png" alt="Icon"></a>
-                    <a href="overview.html"><img src="assets/images/menu-icon/icon-3.png" alt="Icon"></a>
-                    <a href="engagement.html"><img src="assets/images/menu-icon/icon-4.png" alt="Icon"></a>
-                    <a href="traffic-conversion.html"><img src="assets/images/menu-icon/icon-5.png" alt="Icon"></a>
-                </div>
-            </div>
-            <!-- Sidebar Wrapper End -->
+            
 
             <div class="page-content-wrapper py-0">
 
                 <!-- Admin Tab Menu Start -->
-                <div class="nav flex-column admin-tab-menu">
-                    <a href="overview.html">Overview</a>
-                    <a href="students.html" class="active">Student’s</a>
-                    <a href="reviews.html">Review’s</a>
+                <div class="nav flex-column admin-tab-menu ">
+                    <a href="overview.html">Beautiful CSS buttons examples</a>
+                    <a href="students.html" class="active">Student's</a>
+                    <a href="reviews.html">Review's</a>
                     <a href="engagement.html">Course Engagement</a>
                     <a href="traffic-conversion.html">Traffic & Conversion</a>
                 </div>
                 <!-- Admin Tab Menu End -->
 
                 <!-- Page Content Wrapper Start -->
-                <div class="main-content-wrapper">
+                <div class="main-content-wrapper ">
                     <div class="container-fluid">
+                        <h1>box-shadow</h1>
+                        <p>
+                            The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
+                        </p>
+                            
+                        <ul>
+                        </ul>   
 
-                        <!-- Student Top Start -->
-                        <div class="admin-top-bar students-top">
-                            <div class="courses-select">
-                                <select>
-                                    <option data-display="All Courses">All Courses</option>
-                                    <option value="1">option</option>
-                                    <option value="2">option</option>
-                                    <option value="3">option</option>
-                                    <option value="4">Potato</option>
-                                </select>
-
-                                <h4 class="title">Meet people taking your courses</h4>
-                            </div>
-
-                            <div class="student-box">
-                                <h5 class="title">Total Revenue</h5>
-                                <div class="count">2,698</div>
-                            </div>
-                        </div>
-                        <!-- Student Top End -->
-
-                        <!-- Student's Wrapper Start -->
-                        <div class="students-wrapper students-active">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <!-- Single Student Start -->
-                                        <div class="single-student">
-                                            <div class="student-images">
-                                                <img src="assets/images/author/author-01.jpg" alt="Author">
-                                            </div>
-                                            <div class="student-content">
-                                                <h5 class="name">Margarita James</h5>
-                                                <span class="country"><img src="assets/images/flag/flag-1.png" alt="Flog"> Brazil</span>
-                                                <p>Data Science and Machine learning</p>
-                                                <span class="date"><i class="icofont-ui-calendar"></i> 28.03.2021</span>
-                                            </div>
-                                        </div>
-                                        <!-- Single Student End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Student Start -->
-                                        <div class="single-student">
-                                            <div class="student-images">
-                                                <img src="assets/images/author/author-02.jpg" alt="Author">
-                                            </div>
-                                            <div class="student-content">
-                                                <h5 class="name">Stanley Castro</h5>
-                                                <span class="country"><img src="assets/images/flag/flag-1.png" alt="Flog"> Brazil</span>
-                                                <p>Data Science and Machine learning</p>
-                                                <span class="date"><i class="icofont-ui-calendar"></i> 28.03.2021</span>
-                                            </div>
-                                        </div>
-                                        <!-- Single Student End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Student Start -->
-                                        <div class="single-student">
-                                            <div class="student-images">
-                                                <img src="assets/images/author/author-07.jpg" alt="Author">
-                                            </div>
-                                            <div class="student-content">
-                                                <h5 class="name">Beatrice Summers</h5>
-                                                <span class="country"><img src="assets/images/flag/flag-1.png" alt="Flog"> Brazil</span>
-                                                <p>Data Science and Machine learning</p>
-                                                <span class="date"><i class="icofont-ui-calendar"></i> 28.03.2021</span>
-                                            </div>
-                                        </div>
-                                        <!-- Single Student End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Student Start -->
-                                        <div class="single-student">
-                                            <div class="student-images">
-                                                <img src="assets/images/author/author-08.jpg" alt="Author">
-                                            </div>
-                                            <div class="student-content">
-                                                <h5 class="name">Beatrice Summers</h5>
-                                                <span class="country"><img src="assets/images/flag/flag-1.png" alt="Flog"> Brazil</span>
-                                                <p>Data Science and Machine learning</p>
-                                                <span class="date"><i class="icofont-ui-calendar"></i> 28.03.2021</span>
-                                            </div>
-                                        </div>
-                                        <!-- Single Student End -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <!-- Single Student Start -->
-                                        <div class="single-student">
-                                            <div class="student-images">
-                                                <img src="assets/images/author/author-09.jpg" alt="Author">
-                                            </div>
-                                            <div class="student-content">
-                                                <h5 class="name">Beatrice Summers</h5>
-                                                <span class="country"><img src="assets/images/flag/flag-1.png" alt="Flog"> Brazil</span>
-                                                <p>Data Science and Machine learning</p>
-                                                <span class="date"><i class="icofont-ui-calendar"></i> 28.03.2021</span>
-                                            </div>
-                                        </div>
-                                        <!-- Single Student End -->
-                                    </div>
-                                </div>
-
-                                <div class="students-arrow">
-                                    <!-- Add Pagination -->
-                                    <div class="swiper-button-prev"><i class="icofont-rounded-left"></i></div>
-                                    <div class="swiper-button-next"><i class="icofont-rounded-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Student's Wrapper End -->
-
-                        <!-- Student's Map Start -->
-                        <div class="students-map">
-                            <h4 class="title">Student's locations and languages.</h4>
-
-                            <div class="map">
-                                <div id="vmap"></div>
-                            </div>
-                        </div>
-                        <!-- Student's Map End -->
-
-                        <!-- Student's Widget Start -->
-                        <div class="students-widget">
-                            <div class="row">
-                                <div class="col-xxl-4">
-                                    <!-- Student's Widget Start -->
-                                    <div class="single-student-widget widget-color-01">
-                                        <h4 class="widget-title">95 Country</h4>
-
-                                        <div class="widget-items">
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="item-flag">
-                                                    <div class="flag">
-                                                        <img src="assets/images/flag/flag-2.png" alt="Flag">
-                                                    </div>
-                                                    <div class="title">Bangladesh</div>
-                                                </div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 80%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>80%</span> (722)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="item-flag">
-                                                    <div class="flag">
-                                                        <img src="assets/images/flag/flag-3.png" alt="Flag">
-                                                    </div>
-                                                    <div class="title">Pakistan</div>
-                                                </div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 15%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>15%</span> (284)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="item-flag">
-                                                    <div class="flag">
-                                                        <img src="assets/images/flag/flag-4.png" alt="Flag">
-                                                    </div>
-                                                    <div class="title">USA</div>
-                                                </div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 30%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>30%</span> (306)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="item-flag">
-                                                    <div class="flag">
-                                                        <img src="assets/images/flag/flag-1.png" alt="Flag">
-                                                    </div>
-                                                    <div class="title">Brazil</div>
-                                                </div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 90%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>90%</span> (835)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="item-flag">
-                                                    <div class="flag">
-                                                        <img src="assets/images/flag/flag-5.png" alt="Flag">
-                                                    </div>
-                                                    <div class="title">Belgium</div>
-                                                </div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 10%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>10%</span> (152)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="item-flag">
-                                                    <div class="flag">
-                                                        <img src="assets/images/flag/flag-6.png" alt="Flag">
-                                                    </div>
-                                                    <div class="title">Azerbaijan</div>
-                                                </div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 50%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>50%</span> (635)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                        </div>
-
-                                        <!-- Page Pagination End -->
-                                        <div class="page-pagination">
-                                            <ul class="pagination justify-content-center">
-                                                <li><a href="#"><i class="icofont-rounded-left"></i></a></li>
-                                                <li><a class="active" href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- Page Pagination End -->
-                                    </div>
-                                    <!-- Student's Widget End -->
-                                </div>
-
-                                <div class="col-xxl-4">
-                                    <!-- Student's Widget Start -->
-                                    <div class="single-student-widget widget-color-02">
-                                        <h4 class="widget-title">30 Languages</h4>
-
-                                        <div class="widget-items">
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">1. English</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 80%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>80%</span> (538)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">2. Spanish</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 2.5%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>2.5%</span> (189)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">3. French</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 6.8%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>6.8%</span> (263)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">4. Arabic</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 92%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>92%</span> (794)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">5. Greek</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 9.2%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>9.2%</span> (212)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">6. Russian</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 83%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>83%</span> (516)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                        </div>
-
-                                        <!-- Page Pagination End -->
-                                        <div class="page-pagination">
-                                            <ul class="pagination justify-content-center">
-                                                <li><a href="#"><i class="icofont-rounded-left"></i></a></li>
-                                                <li><a class="active" href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- Page Pagination End -->
-                                    </div>
-                                    <!-- Student's Widget End -->
-                                </div>
-
-                                <div class="col-xxl-4">
-                                    <!-- Student's Widget Start -->
-                                    <div class="single-student-widget widget-color-03">
-                                        <h4 class="widget-title">Additional Student Interests</h4>
-
-                                        <div class="widget-items">
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">1. WordPress</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 80%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>80%</span> (538)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">2. SEO</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 25%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>25%</span> (189)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">3. Python</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 60%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>60%</span> (263)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">4. Marketing</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 92%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>92%</span> (794)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">5. Development</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 39%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>39%</span> (212)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                            <!-- Single Item Start -->
-                                            <div class="single-item">
-                                                <div class="title">6. UX Design</div>
-                                                <div class="item-bar">
-                                                    <div class="bar-line" style="width: 83%;"></div>
-                                                </div>
-                                                <div class="item-percentage">
-                                                    <p><span>83%</span> (516)</p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item End -->
-
-                                        </div>
-
-                                        <!-- Page Pagination End -->
-                                        <div class="page-pagination">
-                                            <ul class="pagination justify-content-center">
-                                                <li><a href="#"><i class="icofont-rounded-left"></i></a></li>
-                                                <li><a class="active" href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- Page Pagination End -->
-                                    </div>
-                                    <!-- Student's Widget End -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Student's Widget End -->
-
+                        
+                        
+                        
                         <!-- New Courses Start -->
                         <div class="new-courses" style="background-image: url(assets/images/new-courses-banner.jpg);">
                             <div class="new-courses-title">
@@ -821,6 +379,419 @@
     <script src="assets/js/plugins/jquery.vmap.world.js"></script>
     <script src="assets/js/plugins/jquery.vmap.sampledata.js"></script>
     <script src="assets/js/student-map.js"></script>
+    <script>
+        const isMac = navigator.appVersion.indexOf("Mac") != -1
+    
+        if (isMac) {
+          document.querySelector('.shortcuts-disclaimer .shortcut').textContent = '⌘+D'
+        }
+    
+        function copyToClipboard (value) {
+          const tempInput = document.createElement("textarea");
+          tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+          tempInput.value = value
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+          return true;
+        }
+    
+        const ul = document.querySelector('ul')
+        const shadows = [
+          'rgba(149, 157, 165, 0.2) 0 8px 24px',
+          '0 7px 29px 0 rgba(100,100,111,.2)',
+          'rgba(0,0,0,.15) 1.95px 1.95px 2.6px',
+          '0px 5px 15px rgba(0, 0, 0, 0.35)',
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.16) 0 1px 4px',
+            credits: '3drops',
+          },
+          'rgba(0, 0, 0, 0.24) 0 3px 8px',
+          '0 2px 8px 0 rgba(99,99,99,.2)',
+          'rgba(0, 0, 0, 0.16) 0 1px 4px, #333 0 0 0 3px',
+          'rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px',
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.1) 0 4px 12px',
+            credits: 'Sketch',
+          },
+          'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, .09) 0px -3px 5px',
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px',
+            credits: 'Sketch',
+          },
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px',
+            credits: 'Sketch',
+          },
+          'rgba(17, 12, 46, 0.15) 0 48px 100px 0',
+    
+          // Stripe
+          {
+            boxShadow: 'rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset',
+            credits: 'Stripe',
+          },
+          {
+            boxShadow: 'rgba(255, 255, 255, 0.1) 0 1px 1px 0 inset, rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px',
+            credits: 'Stripe',
+          },
+          {
+            boxShadow: 'rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px',
+            credits: 'Stripe',
+          },
+          {
+            boxShadow: '0 50px 100px -20px rgba(50,50,93,.25), 0 30px 60px -30px rgba(0,0,0,.3)',
+            credits: 'Stripe',
+          },
+          {
+            boxShadow: '0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3)',
+            credits: 'Stripe',
+          },
+          {
+            boxShadow: '0 2px 5px -1px rgba(50,50,93,.25), 0 1px 3px -1px rgba(0,0,0,.3)',
+            credits: 'Stripe',
+          },
+          {
+            boxShadow: '0 20px 30px -10px #26394d',
+            credits: 'Stripe',
+          },
+          {
+            boxShadow: '0 0 0 2px rgba(6,24,44,.4), 0 4px 6px -1px rgba(6,24,44,.65), inset 0 1px 0 hsla(0,0%,100%,.08)',
+            credits: 'Stripe',
+          },
+          '0 6px 12px -2px rgba(50,50,93,0.25),0 3px 7px -3px rgba(0,0,0,0.3)',
+          '0 13px 27px -5px rgba(50,50,93,0.25),0 8px 16px -8px rgba(0,0,0,0.3)',
+          '0 30px 60px -12px rgba(50,50,93,0.25),0 18px 36px -18px rgba(0,0,0,0.3)',
+          'inset 0 30px 60px -12px rgba(50,50,93,0.25),inset 0 18px 36px -18px rgba(0,0,0,0.3)',
+          '0 50px 100px -20px rgba(50,50,93,0.25),0 30px 60px -30px rgba(0,0,0,0.3)',
+          
+          {
+            boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+            credits: 'Material',
+          },
+          {
+            boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+            credits: 'Material',
+          },
+          {
+            boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+            credits: 'Material',
+          },
+          {
+            boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
+            credits: 'Material',
+          },
+          {
+            boxShadow: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
+            credits: 'Material',
+          },
+    
+          
+          {
+            boxShadow: 'rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px',
+            credits: 'Material',
+          },
+          {
+            boxShadow: 'rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px',
+            credits: 'Material',
+          },
+    
+          {
+            boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.05)',
+            credits: 'Tailwind CSS',
+          },
+          {
+            boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+            credits: 'Tailwind CSS',
+          },
+          {
+            boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+            credits: 'Tailwind CSS',
+          },
+          {
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            credits: 'Tailwind CSS',
+          },
+          {
+            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+            credits: 'Tailwind CSS',
+          },
+          {
+            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+            credits: 'Tailwind CSS',
+          },
+          {
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+            credits: 'Tailwind CSS',
+          },
+          {
+            boxShadow: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+            credits: 'Tailwind CSS',
+          },
+    
+          '0 0 5px 0 rgba(0, 0, 0, 0.1),0 0 1px 0 rgba(0, 0, 0, 0.1)',
+    
+          {
+            boxShadow: '0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)',
+            credits: 'Tobias Ahlin',
+          },
+          {
+            boxShadow: '0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09)',
+            credits: 'Tobias Ahlin',
+          },
+    
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.2) 0 18px 50px -10px',
+            credits: 'feedback.fish',
+          },
+          'rgba(0, 0, 0, 0.1) 0 10px 50px',
+          'rgba(0, 0, 0, 0.04) 0 3px 5px',
+    
+    
+          // Alligator
+          {
+            boxShadow: '-5px 5px rgba(240, 46, 170, 0.4), -10px 10px rgba(240, 46, 170, 0.3), -15px 15px rgba(240, 46, 170, 0.2), -20px 20px rgba(240, 46, 170, 0.1), -25px 25px rgba(240, 46, 170, 0.05)',
+            credits: 'Alligator'
+          },
+          {
+            boxShadow: '0 5px rgba(240, 46, 170, 0.4), 0 10px rgba(240, 46, 170, 0.3), 0 15px rgba(240, 46, 170, 0.2), 0 20px rgba(240, 46, 170, 0.1), 0 25px rgba(240, 46, 170, 0.05)',
+            credits: 'Alligator'
+          },
+          {
+            boxShadow: '5px 5px rgba(240, 46, 170, 0.4), 10px 10px rgba(240, 46, 170, 0.3), 15px 15px rgba(240, 46, 170, 0.2), 20px 20px rgba(240, 46, 170, 0.1), 25px 25px rgba(240, 46, 170, 0.05)',
+            credits: 'Alligator'
+          },
+    
+          'rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px',
+          {
+            boxShadow: 'rgba(67, 71, 85, 0.27) 0 0 .25em, rgba(90, 125, 188, 0.05) 0 .25em 1em',
+            credits: 'pqina.nl/doka',
+          },
+          'rgba(0,0,0,.1) 0 1px 2px 0',
+          {
+            boxShadow: 'rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset',
+            credits: 'Github',
+          },
+          {
+            boxShadow: 'rgba(3, 102, 214, 0.3) 0 0 0 3px',
+            credits: 'Github',
+          },
+          'rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0',
+          {
+            boxShadow: '0 12px 28px 0 rgba(0, 0, 0, 0.2),0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(255, 255, 255, 0.05)',
+            credits: 'Facebook',
+          },
+    
+          //shopify
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.15) 0 5px 15px 0',
+            credits: 'Shopify'
+          },
+          {
+            boxShadow: 'rgba(33, 35, 38, 0.1) 0 10px 10px -10px',
+            credits: 'Shopify'
+          },
+    
+          //fossheim
+          {
+            boxShadow: 'inset blue 0 0 0 2px, 10px -10px 0 -3px #fff, 10px -10px #1FC11B, 20px -20px 0 -3px #fff, 20px -20px #FFD913, 30px -30px 0 -3px #fff, 30px -30px #FF9C55, 40px -40px 0 -3px #fff, 40px -40px #FF5555',
+            extra: {
+              borderRadius: 0,
+            },
+            credits: 'Fossheim'
+          },
+    
+          {
+            boxShadow: 'rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px',
+            extra: {
+              borderRadius: 0
+            },
+            credits: 'Fossheim'
+          },
+    
+          //boxshadows.com
+          {
+            boxShadow: '3px 3px 6px 0px #CCDBE8 inset, -3px -3px 6px 1px rgba(255,255,255,0.5) inset',
+            credits: 'boxshadows.com'
+          },
+          {
+            boxShadow: '6px 2px 16px 0px rgba(136, 165, 191, 0.48) , -6px -2px 16px 0px rgba(255, 255, 255, 0.8)',
+            credits: 'boxshadows.com'
+          },
+    
+          //box-shadows.co
+          {
+            boxShadow: '0px 1px 0px rgba(17,17,26,0.1)',
+            credits: 'box-shadows.co'
+          },
+          {
+            boxShadow: '0px 1px 0px rgba(17,17,26,0.05), 0px 0px 8px rgba(17,17,26,0.1)',
+            credits: 'box-shadows.co'
+          },
+          {
+            boxShadow: '0px 0px 16px rgba(17,17,26,0.1)',
+            credits: 'box-shadows.co'
+          },
+          {
+            boxShadow: '0px 4px 16px rgba(17,17,26,0.05), 0px 8px 32px rgba(17,17,26,0.05)',
+            credits: 'box-shadows.co'
+          },
+          {
+            boxShadow: '0px 4px 16px rgba(17,17,26,0.1), 0px 8px 32px rgba(17,17,26,0.05)',
+            credits: 'box-shadows.co'
+          },
+          {
+            boxShadow: '0px 1px 0px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 48px rgba(17,17,26,0.1)',
+            credits: 'box-shadows.co'
+          },
+          {
+            boxShadow: '0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1)',
+            credits: 'box-shadows.co'
+          },
+          {
+            boxShadow: '0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1), 0px 24px 80px rgba(17,17,26,0.1)',
+            credits: 'box-shadows.co'
+          },
+    
+          {
+            boxShadow: 'rgba(50, 50, 105, 0.15) 0 2px 5px 0, rgba(0, 0, 0, 0.05) 0 1px 1px 0',
+            credits: '10er.app',
+          },
+    
+          {
+            boxShadow: '0 15px 25px rgba(0, 0, 0, 0.15),0 5px 10px rgba(0, 0, 0, 0.05)',
+            credits: 'wip.chat'
+          },
+    
+          {
+            boxShadow: 'rgba(0,0,0,.15) 2.4px 2.4px 3.2px'
+          },
+    
+          {
+            boxShadow: '0 3px 3px 0 rgba(0,0,0,0.15)',
+            credits: 'Airbnb'
+          },
+    
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.08) 0 4px 12px',
+            credits: 'Airbnb'
+          },
+    
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.15) 0 2px 8px',
+            credits: 'Airbnb'
+          },
+    
+          {
+            boxShadow: 'rgba(0, 0, 0, 0.18) 0 2px 4px',
+            credits: 'Airbnb'
+          },
+    
+          {
+            boxShadow: '-4px 9px 25px -6px rgba(0,0,0,.1)',
+            credits: 'ls.graphics'
+          },
+    
+          {
+            boxShadow: '0 60px 40px -7px rgba(0,0,0,.2)',
+            credits: 'ls.graphics'
+          },
+    
+          {
+            boxShadow: '0 30px 90px rgba(0,0,0,0.4)',
+            credits: 'Lonely Planet'
+          },
+    
+          {
+            boxShadow: '0 22px 70px 4px rgba(0, 0, 0, 0.56)',
+            credits: 'Mac'
+          },
+          {
+            boxShadow: '0px 20px 30px rgba(0, 0, 0, 0.2)',
+            credits: 'Mac'
+          },
+          {
+            boxShadow: 'rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px',
+            credits: 'Mac'
+          },
+          {
+            boxShadow: '0 .0625em .0625em rgba(0, 0, 0, 0.25), 0 .125em .5em rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.1)',
+            credits: 'pqina.nl/doka'
+          },
+    
+          {
+            boxShadow: 'rgba(0,0,0,0.09) 0px 3px 12px',
+            credits: 'Typedream'
+          },
+    
+          {
+            boxShadow: 'inset 0px -23px 25px 0 rgba(0, 0, 0, .17), inset 0 -36px 30px 0px rgba(0, 0, 0, .15) ,inset 0 -79px 40px 0px rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px',
+            extra: {
+              borderRadius: '35px',
+            },
+          },
+    
+          'rgba(0, 0, 0, 0.45) 0 25px 20px -20px',
+          '0px 2px 4px rgba(0, 0, 0, .4), 0px 7px 13px -3px rgba(0, 0, 0, .3), inset 0px -3px 0px rgba(0, 0, 0, .2)',
+    
+    
+          '0 0 0 1px rgba(0, 0, 0, 0.05), inset rgb(209, 213, 219) 0 0 0 1px',
+          'inset 0px -50px 36px -28px rgba(0,0,0,0.35)',
+    
+          {
+            boxShadow: 'rgba(9, 30, 66, 0.25) 0 1px 1px, rgba(9, 30, 66, 0.13) 0 0 1px 1px',
+            credits: 'Trello',
+          },
+    
+          {
+            boxShadow: 'rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px',
+            credits: 'Trello',
+          },
+    
+        ]
+    
+        async function addShadow (shadow) {
+          const li = document.createElement('li')
+          li.innerHTML = `<span>#${shadows.indexOf(shadow)}</span>`
+    
+          if (typeof shadow === 'object') {
+            li.style.boxShadow = shadow.boxShadow
+    
+            if (shadow.extra) {
+              for (let z = 0; z < Object.keys(shadow.extra).length; z++) {
+                li.style[Object.keys(shadow.extra)[z]] = shadow.extra[Object.keys(shadow.extra)[z]]
+              }
+            }
+            
+            if (shadow.credits) {
+              li.innerHTML += `<span class="credits">by ${shadow.credits}</span>`
+            }
+          } else {
+            li.style.boxShadow = shadow
+          }
+          li.dataset.tippyContent = `Click to copy box-shadow #${shadows.indexOf(shadow)}`
+          ul.appendChild(li)
+    
+          li.addEventListener('click', function (e) {
+            const previousHTML = li.innerHTML
+            li.classList.add('copied')
+            copyToClipboard(`box-shadow: ${li.style.boxShadow};`)
+            li.innerHTML = 'Copied!'
+            setTimeout(() => {
+              li.innerHTML = previousHTML
+              li.classList.remove('copied')
+            }, 1000)
+          })
+        }
+    
+        async function processArray (array) {
+          for (const item of shadows) {
+            await addShadow(item);
+          }
+        }
+    
+        processArray(shadows)
+    </script>
 </body>
 
 
