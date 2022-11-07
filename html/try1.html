@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <style>
+        
+    </style>
+</head>
+<body>    
+      <link id="dark-theme-style" rel="stylesheet" />
+      <a
+        href="javascript:void()"
+        class="btn btn-outline-info btn-lg ml-auto font-weight-bold"
+        id="theme-toggler"
+        onclick="toggleTheme()"></a>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://kit.fontawesome.com/266b76cb57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script>
+        // you can use app's unique identifier here
+            const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+
+            const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+
+            // you can change this url as needed
+            const DARK_THEME_PATH = "https://bootswatch.com/4/cyborg/bootstrap.min.css";
+
+            const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+            const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+            let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+
+            // check if user has already selected dark theme earlier
+            if (isDark) {
+            enableDarkTheme();
+            } else {
+            disableDarkTheme();
+            }
+
+
+/**
+ * Apart from toggling themes, this will also store user's theme preference in local storage.
+ * So when user visits next time, we can load the same theme.
+ *
+ */
+        function toggleTheme() {
+        isDark = !isDark;
+        if (isDark) {
+            enableDarkTheme();
+        } else {
+            disableDarkTheme();
+        }
+        const META = { isDark };
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+        }
+
+        function enableDarkTheme() {
+        DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+        THEME_TOGGLER.innerHTML = "🌙 Dark";
+        }
+
+        function disableDarkTheme() {
+        DARK_STYLE_LINK.setAttribute("href", "");
+        THEME_TOGGLER.innerHTML = "🌞 Light";
+        }
+
+    </script>
+</body>
+</html>

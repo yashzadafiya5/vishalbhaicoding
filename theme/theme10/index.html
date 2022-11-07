@@ -101,7 +101,7 @@
                                             <a href="#">Blog</a>
                                             <ul class="sub-menu">
                                                 <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                                <li><a href="htmlbyalphabet.html">Html Code</a></li>
                                                 <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
                                             </ul>
                                         </li>
@@ -200,7 +200,7 @@
                                 <a href="#">Blog</a>
                                 <ul class="sub-menu">
                                     <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                    <li><a href="htmlbyalphabet.html">Html Code</a></li>
                                     <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
                                 </ul>
                             </li>
@@ -234,7 +234,7 @@
                 <div class="swiper-wrapper">
 
                     <!-- Single Slider Start -->
-                    <div class="swiper-slide animation-style-01 single-slider d-flex align-items-center" style="background-image: url(../../images/bgg1.jpg);">
+                    <div class="swiper-slide animation-style-01 single-slider d-flex align-items-center" style="background-image: url(../theme10/images/bgg1.jpg);">
                         <div class="container">
 
                             <!-- Slider Content Start -->
@@ -267,7 +267,7 @@
                     <!-- Single Slider End -->
 
                     <!-- Single Slider Start -->
-                    <div class="swiper-slide animation-style-01 single-slider d-flex align-items-center" style="background-image: url(../../images/bgg2.jpg);">
+                    <div class="swiper-slide animation-style-01 single-slider d-flex align-items-center" style="background-image: url(../theme10/images/bgg2.jpg);">
                         <div class="container">
 
                             <!-- Slider Content Start -->
@@ -300,7 +300,7 @@
                     <!-- Single Slider End -->
 
                     <!-- Single Slider Start -->
-                    <div class="swiper-slide animation-style-01 single-slider d-flex align-items-center" style="background-image: url(../../images/bgg3.jpg);">
+                    <div class="swiper-slide animation-style-01 single-slider d-flex align-items-center" style="background-image: url(../theme10/images/bgg3.jpg);">
                         <div class="container">
 
                             <!-- Slider Content Start -->
@@ -346,7 +346,7 @@
                             <!-- Single Feature Start -->
                             <div class="single-feature">
                                 <div class="feature-icon">
-                                    <span><img src="../../images/team.png" alt="" height="200px" width="200px"></span>
+                                    <span><img src="../theme10/images/team.png" alt="" height="200px" width="200px"></span>
                                 </div>
                                 <div class="feature-content">
                                     <div class="content-wrapper">
@@ -880,6 +880,13 @@
 
         <!-- Footer Start -->
         <div class="section footer-section">
+            <link id="dark-theme-style" rel="stylesheet" />
+            <a
+            href="javascript:void()"
+            class="btn btn-outline-info  font-weight-bold"
+            id="theme-toggler"
+            style="margin: 10px 20px 10px 20px; border:2px solid black;"
+            onclick="toggleTheme()"></a>
 
             <!-- Footer Widget Section Start -->
             <div class="footer-widget-section section-padding">
@@ -1039,7 +1046,49 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
+        
+    <script>
+        // you can use app's unique identifier here
+            const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+  
+            const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+  
+            // you can change this url as needed
+            const DARK_THEME_PATH = "https://bootswatch.com/4/cyborg/bootstrap.min.css";
+            
+            const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+            const THEME_TOGGLER = document.getElementById("theme-toggler");
+  
+            let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+  
+            // check if user has already selected dark theme earlier
+            if (isDark) {
+            enableDarkTheme();
+            } else {
+            disableDarkTheme();
+            }
+        function toggleTheme() {
+        isDark = !isDark;
+        if (isDark) {
+            enableDarkTheme();
+        } else {
+            disableDarkTheme();
+        }
+        const META = { isDark };
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+        }
+  
+        function enableDarkTheme() {
+        DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+        THEME_TOGGLER.innerHTML = "🌙 Dark";
+        }
+  
+        function disableDarkTheme() {
+        DARK_STYLE_LINK.setAttribute("href", "");
+        THEME_TOGGLER.innerHTML = "🌞 Light";
+        }
+  
+    </script>
 </body>
 
 
