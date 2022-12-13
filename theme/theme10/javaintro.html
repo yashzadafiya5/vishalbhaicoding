@@ -289,7 +289,7 @@
         <div class="container">
           <!-- Page banner Section Start -->
           <div class="page-banner-content">
-            <h2 class="page-title">CSS Syntax</h2>
+            <h2 class="page-title">JavaScript <span class="color_h1">Introduction</span></h2>
           </div>
           <!-- Page banner Section End -->
         </div>
@@ -303,142 +303,249 @@
           <div class="blog-wrapper-02">
             <div class="row flex-row-reverse">
               <div class="col-lg-8">
-                <h1>CSS <span class="color_h1">Syntax</span></h1>
-                <br />
-                <p class="intro">
-                  A CSS rule consists of a selector and a declaration block.
-                </p>
+                <h1>
+                  JavaScript <span class="color_h1">Introduction</span>
+                </h1>
+                <br>
+                <div class="w3-panel w3-info intro">
+                  <p>
+                    This page contains some examples of what JavaScript
+                    can do.
+                  </p>
+                </div>
+
                 <div
                   class="container-fluid mt-5"
                   style="height: 600px; overflow-y: scroll"
                 >
                   <div class="row">
                     <div class="container">
-                      <div class="w3-col l10 m12" id="main">
-                        
-                        <div
-                          style="
-                            background-color: white;
-                            padding: 1px 8px;
-                            border-radius: 5px;
-                          "
-                        >
-                          <p>
-                            <img
-                              src="https://www.w3schools.com/css/img_selector.gif"
-                              alt="CSS selector"
-                              class="w3-image"
-                            />
-                          </p>
-                        </div>
-                        <p>
-                          The selector points to the HTML element you want to
-                          style.
-                        </p>
-                        <p>
-                          The declaration block contains one or more
-                          declarations separated by semicolons.
-                        </p>
-                        <p>
-                          Each declaration includes a CSS property name and a
-                          value, separated by a colon.
-                        </p>
-                        <p>
-                          Multiple CSS declarations are separated with
-                          semicolons, and declaration blocks are surrounded by
-                          curly braces.
-                        </p><br>
-                        <div class="w3-example">
-                          <h3>Example</h3><hr>
-                          <p>
-                            In this example all &lt;p&gt; elements will be
-                            center-aligned, with a red text color:
-                          </p>
-                          <div class="w3-code notranslate cssHigh">
-                            <span class="cssselectorcolor" style="color: brown">
-                              p
-                              <span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >{</span
-                              ><span class="csspropertycolor" style="color: red"
-                                ><br />
-                                &nbsp;&nbsp;color<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  red<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br />
-                                &nbsp;&nbsp;text-align<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  center<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br /> </span
-                              ><span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >}</span
-                              >
-                            </span>
-                          </div>
-                          
-                        </div><br>
-                        <h2>Example Explained</h2><hr>
-                        <ul>
-                          <li>
-                            <code class="w3-codespan">p</code> is a selector in
-                            CSS (it points to the HTML element you want to
-                            style: &lt;p&gt;).
-                          </li>
-                          <li>
-                            <code class="w3-codespan">color</code> is a
-                            property, and
-                            <code class="w3-codespan">red</code> is the property
-                            value
-                          </li>
-                          <li>
-                            <code class="w3-codespan">text-align</code> is a
-                            property, and
-                            <code class="w3-codespan">center</code> is the
-                            property value
-                          </li>
-                        </ul>
-                        <div class="w3-note w3-panel">
-                          <p>
-                            You will learn much more about CSS selectors and CSS
-                            properties in the next chapters!
-                          </p>
-                        </div>
+                      
+                      
+                      <h2>JavaScript Can Change HTML Content</h2><hr>
+                      <p>
+                        One of many JavaScript HTML methods is
+                        <code class="w3-codespan">getElementById()</code>.
+                      </p>
+                      <p>
+                        The example below "finds" an HTML element (with
+                        id="demo"), and changes the element content (innerHTML)
+                        to "Hello JavaScript":
+                      </p>
 
-                        <br />
-                        
-                        <div
-                          id="mypagediv2"
-                          style="position: relative; text-align: center"
-                        ></div>
-                        <br />
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"Hello JavaScript"</span
+                            >;
+                          </span>
+                        </div>
+                        <a
+                          target="_blank"
+                          class="w3-btn w3-margin-bottom"
+                          href="tryit.asp?filename=tryjs_intro_inner_html"
+                          >Try it Yourself »</a
+                        >
                       </div>
+                      <div class="w3-panel w3-note">
+                        <p>JavaScript accepts both double and single quotes:</p>
+                      </div>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >'demo'</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >'Hello JavaScript'</span
+                            >;
+                          </span>
+                        </div>
+                        
+                      </div>
+                      <hr />
+
+                      <h2>JavaScript Can Change HTML Attribute Values</h2><hr>
+                      <p>
+                        In this example JavaScript changes the value of the
+                        <code class="w3-codespan">src</code> (source) attribute
+                        of an <code class="w3-codespan">&lt;img&gt;</code> tag:
+                      </p>
+
+                      <hr />
+                      <div
+                        id="midcontentadcontainer"
+                        style="overflow: auto; text-align: center"
+                      >
+                        <!-- MidContent -->
+                        <!-- <p class="adtext">Advertisement</p> -->
+
+                        <div id="adngin-mid_content-0"></div>
+                      </div>
+                      
+
+                      <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+                      <p>
+                        Changing the style of an HTML element, is a variant of
+                        changing an HTML attribute:
+                      </p>
+
+                      <div class="w3-example">
+                        <h3>Example</h3>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >style</span
+                            >.<span class="jspropertycolor" style="color: black"
+                              >fontSize</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"35px"</span
+                            >;
+                          </span>
+                        </div>
+                        
+                      </div>
+                      <hr />
+
+                      <h2>JavaScript Can Hide HTML Elements</h2><hr>
+                      <p>
+                        Hiding HTML elements can be done by changing the
+                        <code class="w3-codespan">display</code> style:
+                      </p>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >style</span
+                            >.<span class="jspropertycolor" style="color: black"
+                              >display</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"none"</span
+                            >;
+                          </span>
+                        </div>
+                        
+                      </div>
+                      <hr />
+
+                      <h2>JavaScript Can Show HTML Elements</h2><hr>
+                      <p>
+                        Showing hidden HTML elements can also be done by
+                        changing the
+                        <code class="w3-codespan">display</code> style:
+                      </p>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >style</span
+                            >.<span class="jspropertycolor" style="color: black"
+                              >display</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"block"</span
+                            >;
+                          </span>
+                        </div>
+                       
+                      </div>
+
+                      <div class="w3-panel w3-note">
+                        <h3>Did You Know?</h3><hr>
+                        <p>
+                          JavaScript and
+                          <a href="/java/default.asp">Java</a> are completely
+                          different languages, both in concept and design.
+                        </p>
+                        <p>
+                          JavaScript was invented by Brendan Eich in 1995, and
+                          became an ECMA standard in 1997.
+                        </p>
+                        <p>
+                          ECMA-262 is the official name of the standard.
+                          ECMAScript is the official name of the language.
+                        </p>
+                        
+                      </div>
+                      <br />
+                      
+                      <div
+                        id="mypagediv2"
+                        style="position: relative; text-align: center"
+                      ></div>
                     </div>
                   </div>
                 </div>
-              </div><div class="col-lg-3">
+              </div>
+              <div class="col-lg-3">
                 <!-- Blog Sidebar Start -->
                 <div class="sidebar">
                   <!-- Sidebar Widget Category Start -->
@@ -448,38 +555,41 @@
                     <div class="widget-category">
                       <ul class="category-list">
                         <li>
-                          <a href="cssintroduction.html" class="active"
-                            >CSS Introduction</a
+                          <a href="javaintro.html" class="active">
+                            JavaScript Introduction
+                          </a>
+                        </li>
+                        <br />
+                        <li>
+                          <a href="javawhereuse.html"
+                            >JavaScript Where To Use</a
                           >
                         </li>
                         <br />
                         <li>
-                          <a href="Csssyntax.html">CSS Syntax</a>
+                          <a href="javaoutput.html">JavaScript Output</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSSelectors.html">CSS Selectors</a>
+                          <a href="javastatment.html"> JavaScript Statements</a>
                         </li>
                         <br />
                         <li>
-                          <a href="Csshowtoadd.html">How To Add CSS</a>
+                          <a href="javasyntax.html">JavaScript Syntax</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CssComents.html">CSS Comments</a>
+                          <a href="javacomment.html">JavaScript Comments</a>
                         </li>
                         <br />
                         <li>
-                          <a href="cssbackground.html">CSS Backgrounds</a>
+                          <a href="javavarible.html"> JavaScript Variables</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSBorders.html">CSS Borders</a>
+                          <a href="javaoprator.html">JavaScript Operators</a>
                         </li>
                         <br />
-                        <li><a href="cssmargin.html">CSS Margins</a></li>
-                        <br>
-                        
                       </ul>
                     </div>
                   </div>

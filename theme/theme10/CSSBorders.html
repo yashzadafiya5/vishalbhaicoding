@@ -289,7 +289,7 @@
         <div class="container">
           <!-- Page banner Section Start -->
           <div class="page-banner-content">
-            <h2 class="page-title">CSS Syntax</h2>
+            <h2 class="page-title">CSS Comments</h2>
           </div>
           <!-- Page banner Section End -->
         </div>
@@ -303,138 +303,407 @@
           <div class="blog-wrapper-02">
             <div class="row flex-row-reverse">
               <div class="col-lg-8">
-                <h1>CSS <span class="color_h1">Syntax</span></h1>
+                <h1>CSS <span class="color_h1">Borders</span></h1>
                 <br />
-                <p class="intro">
-                  A CSS rule consists of a selector and a declaration block.
-                </p>
+                
                 <div
                   class="container-fluid mt-5"
                   style="height: 600px; overflow-y: scroll"
                 >
                   <div class="row">
                     <div class="container">
-                      <div class="w3-col l10 m12" id="main">
-                        
-                        <div
-                          style="
-                            background-color: white;
-                            padding: 1px 8px;
-                            border-radius: 5px;
-                          "
-                        >
-                          <p>
-                            <img
-                              src="https://www.w3schools.com/css/img_selector.gif"
-                              alt="CSS selector"
-                              class="w3-image"
-                            />
-                          </p>
-                        </div>
-                        <p>
-                          The selector points to the HTML element you want to
-                          style.
-                        </p>
-                        <p>
-                          The declaration block contains one or more
-                          declarations separated by semicolons.
-                        </p>
-                        <p>
-                          Each declaration includes a CSS property name and a
-                          value, separated by a colon.
-                        </p>
-                        <p>
-                          Multiple CSS declarations are separated with
-                          semicolons, and declaration blocks are surrounded by
-                          curly braces.
-                        </p><br>
-                        <div class="w3-example">
-                          <h3>Example</h3><hr>
-                          <p>
-                            In this example all &lt;p&gt; elements will be
-                            center-aligned, with a red text color:
-                          </p>
-                          <div class="w3-code notranslate cssHigh">
-                            <span class="cssselectorcolor" style="color: brown">
-                              p
-                              <span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >{</span
-                              ><span class="csspropertycolor" style="color: red"
-                                ><br />
-                                &nbsp;&nbsp;color<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  red<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br />
-                                &nbsp;&nbsp;text-align<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  center<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br /> </span
-                              ><span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >}</span
-                              >
-                            </span>
-                          </div>
-                          
-                        </div><br>
-                        <h2>Example Explained</h2><hr>
-                        <ul>
-                          <li>
-                            <code class="w3-codespan">p</code> is a selector in
-                            CSS (it points to the HTML element you want to
-                            style: &lt;p&gt;).
-                          </li>
-                          <li>
-                            <code class="w3-codespan">color</code> is a
-                            property, and
-                            <code class="w3-codespan">red</code> is the property
-                            value
-                          </li>
-                          <li>
-                            <code class="w3-codespan">text-align</code> is a
-                            property, and
-                            <code class="w3-codespan">center</code> is the
-                            property value
-                          </li>
-                        </ul>
-                        <div class="w3-note w3-panel">
-                          <p>
-                            You will learn much more about CSS selectors and CSS
-                            properties in the next chapters!
-                          </p>
-                        </div>
+                      <h1>CSS <span class="color_h1">Borders</span></h1><br>
+                      <p class="intro">
+                        The CSS border properties allow you to specify the
+                        style, width, and color of an element's border.
+                      </p>
+                      <hr />
 
-                        <br />
-                        
-                        <div
-                          id="mypagediv2"
-                          style="position: relative; text-align: center"
-                        ></div>
-                        <br />
+                      <div
+                        class="w3-container w3-border w3-border-black w3-margin-top"
+                      >
+                        <p>I have borders on all sides.</p>
                       </div>
+                      <br />
+                      <div class="w3-container w3-border-bottom w3-border-red">
+                        <p>I have a red bottom border.</p>
+                      </div>
+                      <br />
+                      <div class="w3-container w3-border w3-round-xlarge">
+                        <p>I have rounded borders.</p>
+                      </div>
+                      <br />
+                      <div
+                        class="w3-container w3-pale-blue w3-leftbar w3-border-blue"
+                      >
+                        <p>I have a blue left border.</p>
+                      </div>
+                      <hr />
+
+                      <h2>CSS Border Style</h2><hr>
+                      <p>
+                        The
+                        <code class="w3-codespan">border-style</code> property
+                        specifies what kind of border to display.
+                      </p>
+                      <p>The following values are allowed:</p>
+                      <ul>
+                        <li>
+                          <code class="w3-codespan">dotted</code> - Defines a
+                          dotted border
+                        </li>
+                        <li>
+                          <code class="w3-codespan">dashed</code> - Defines a
+                          dashed border
+                        </li>
+                        <li>
+                          <code class="w3-codespan">solid</code> - Defines a
+                          solid border
+                        </li>
+                        <li>
+                          <code class="w3-codespan">double</code> - Defines a
+                          double border
+                        </li>
+                        <li>
+                          <code class="w3-codespan">groove</code> - Defines a 3D
+                          grooved border. The effect depends on the border-color
+                          value
+                        </li>
+                        <li>
+                          <code class="w3-codespan">ridge</code> - Defines a 3D
+                          ridged border. The effect depends on the border-color
+                          value
+                        </li>
+                        <li>
+                          <code class="w3-codespan">inset</code> - Defines a 3D
+                          inset border. The effect depends on the border-color
+                          value
+                        </li>
+                        <li>
+                          <code class="w3-codespan">outset</code> - Defines a 3D
+                          outset border. The effect depends on the border-color
+                          value
+                        </li>
+                        <li>
+                          <code class="w3-codespan">none</code> - Defines no
+                          border
+                        </li>
+                        <li>
+                          <code class="w3-codespan">hidden</code> - Defines a
+                          hidden border
+                        </li>
+                      </ul>
+
+                      <p>
+                        The
+                        <code class="w3-codespan">border-style</code> property
+                        can have from one to four values (for the top border,
+                        right border, bottom border, and the left border).
+                      </p>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <p>Demonstration of the different border styles:</p>
+                        <div class="w3-code notranslate cssHigh">
+                          <span class="cssselectorcolor" style="color: brown">
+                            p.dotted
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                dotted<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.dashed
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                dashed<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.solid
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                solid<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.double
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                double<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.groove
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                groove<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.ridge
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                ridge<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.inset
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                inset<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.outset
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                outset<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.none
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                none<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />p.hidden
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                hidden<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br />
+                            p.mix
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              >border-style<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                dotted dashed solid double<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            >
+                          </span>
+                        </div><br>  
+                        <p>Result:</p><hr>
+                        <div class="w3-white w3-padding notranslate">
+                          <p style="border-style: dotted; padding: 2px 4px">
+                            A dotted border.
+                          </p>
+                          <p style="border-style: dashed; padding: 2px 4px">
+                            A dashed border.
+                          </p>
+                          <p style="border-style: solid; padding: 2px 4px">
+                            A solid border.
+                          </p>
+                          <p style="border-style: double; padding: 2px 4px">
+                            A double border.
+                          </p>
+                          <p style="border-style: groove; padding: 2px 4px">
+                            A groove border. The effect depends on the
+                            border-color value.
+                          </p>
+                          <p style="border-style: ridge; padding: 2px 4px">
+                            A ridge border. The effect depends on the
+                            border-color value.
+                          </p>
+                          <p style="border-style: inset; padding: 2px 4px">
+                            An inset border. The effect depends on the
+                            border-color value.
+                          </p>
+                          <p style="border-style: outset; padding: 2px 4px">
+                            An outset border. The effect depends on the
+                            border-color value.
+                          </p>
+                          <p style="border-style: none; padding: 2px 4px">
+                            No border.
+                          </p>
+                          <p style="border-style: hidden; padding: 2px 4px">
+                            A hidden border.
+                          </p>
+                          <p
+                            style="
+                              border-style: dotted dashed solid double;
+                              padding: 2px 4px;
+                            "
+                          >
+                            A mixed border.
+                          </p>
+                        </div>
+                        <br>
+                        <div class="w3-panel w3-note">
+                          <p><b>Note:</b> None of the OTHER CSS border properties (which you will learn more about in the next chapters) will have ANY effect unless the 
+                        <code class="w3-codespan">border-style</code> property is set!</p>
+                        </div>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>

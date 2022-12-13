@@ -289,7 +289,10 @@
         <div class="container">
           <!-- Page banner Section Start -->
           <div class="page-banner-content">
-            <h2 class="page-title">CSS Syntax</h2>
+            <h2 class="page-title">
+              JavaScript <span class="color_h1">Variables</span>
+            </h2>
+
           </div>
           <!-- Page banner Section End -->
         </div>
@@ -303,142 +306,246 @@
           <div class="blog-wrapper-02">
             <div class="row flex-row-reverse">
               <div class="col-lg-8">
-                <h1>CSS <span class="color_h1">Syntax</span></h1>
-                <br />
-                <p class="intro">
-                  A CSS rule consists of a selector and a declaration block.
-                </p>
+                <h1>JavaScript <span class="color_h1">Variables</span></h1>
                 <div
                   class="container-fluid mt-5"
                   style="height: 600px; overflow-y: scroll"
                 >
                   <div class="row">
                     <div class="container">
-                      <div class="w3-col l10 m12" id="main">
-                        
-                        <div
-                          style="
-                            background-color: white;
-                            padding: 1px 8px;
-                            border-radius: 5px;
-                          "
-                        >
-                          <p>
-                            <img
-                              src="https://www.w3schools.com/css/img_selector.gif"
-                              alt="CSS selector"
-                              class="w3-image"
-                            />
-                          </p>
-                        </div>
-                        <p>
-                          The selector points to the HTML element you want to
-                          style.
-                        </p>
-                        <p>
-                          The declaration block contains one or more
-                          declarations separated by semicolons.
-                        </p>
-                        <p>
-                          Each declaration includes a CSS property name and a
-                          value, separated by a colon.
-                        </p>
-                        <p>
-                          Multiple CSS declarations are separated with
-                          semicolons, and declaration blocks are surrounded by
-                          curly braces.
-                        </p><br>
-                        <div class="w3-example">
-                          <h3>Example</h3><hr>
-                          <p>
-                            In this example all &lt;p&gt; elements will be
-                            center-aligned, with a red text color:
-                          </p>
-                          <div class="w3-code notranslate cssHigh">
-                            <span class="cssselectorcolor" style="color: brown">
-                              p
-                              <span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >{</span
-                              ><span class="csspropertycolor" style="color: red"
-                                ><br />
-                                &nbsp;&nbsp;color<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  red<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br />
-                                &nbsp;&nbsp;text-align<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  center<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br /> </span
-                              ><span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >}</span
-                              >
-                            </span>
-                          </div>
-                          
-                        </div><br>
-                        <h2>Example Explained</h2><hr>
-                        <ul>
-                          <li>
-                            <code class="w3-codespan">p</code> is a selector in
-                            CSS (it points to the HTML element you want to
-                            style: &lt;p&gt;).
-                          </li>
-                          <li>
-                            <code class="w3-codespan">color</code> is a
-                            property, and
-                            <code class="w3-codespan">red</code> is the property
-                            value
-                          </li>
-                          <li>
-                            <code class="w3-codespan">text-align</code> is a
-                            property, and
-                            <code class="w3-codespan">center</code> is the
-                            property value
-                          </li>
-                        </ul>
-                        <div class="w3-note w3-panel">
-                          <p>
-                            You will learn much more about CSS selectors and CSS
-                            properties in the next chapters!
-                          </p>
-                        </div>
+                  <div class="w3-info">
+                    <h3>4 Ways to Declare a JavaScript Variable:</h3><hr>
+                    <ul>
+                    <li>Using <code class="w3-codespan">var</code></li>
+                    <li>Using <code class="w3-codespan">let</code></li>
+                    <li>Using <code class="w3-codespan">const</code></li>
+                    <li>Using nothing</li>
+                    </ul>
+                  </div>
+                <h2>What are Variables?</h2>
+                <p>Variables are containers for storing data (storing data values).</p>
+                <p>In this example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code>, and <code class="w3-codespan">z</code>,
+                are variables, declared with the <code class="w3-codespan">var</code> keyword:</p>
+                <div class="w3-example"><br>
+                  <h3>Example</h3><hr>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <span class="jsnumbercolor" style="color:red">5</span>;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> y = <span class="jsnumbercolor" style="color:red">6</span>;<br>
+                <span class="jskeywordcolor" style="color:mediumblue">var</span> z = x + y;<span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+                
+                </div>
+                <p>In this example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code>, and <code class="w3-codespan">z</code>,
+                  are variables, declared with the <code class="w3-codespan">let</code> keyword:</p>
+                  <div class="w3-example"><br>
+                  <h3>Example</h3><hr>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                  <span class="jskeywordcolor" style="color:mediumblue">let</span> x = <span class="jsnumbercolor" style="color:red">5</span>;<br>
+                  <span class="jskeywordcolor" style="color:mediumblue">let</span> y = <span class="jsnumbercolor" style="color:red">6</span>;<br>
+                  <span class="jskeywordcolor" style="color:mediumblue">let</span> z = x + y;<span class="jsnumbercolor" style="color:red">
+                  </span> </span></div>
+                  
+                  </div>
+                  <p>In this example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code>, and <code class="w3-codespan">z</code>,
+                    are undeclared variables:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    x = <span class="jsnumbercolor" style="color:red">5</span>;<br>
+                    y = <span class="jsnumbercolor" style="color:red">6</span>;<br>
+                    z = x + y;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    <p>From all the examples above, you can guess:</p>
+                    <ul>
+                     <li>x stores the value 5</li>
+                     <li>y stores the value 6</li>
+                     <li>z stores the value 11</li>
+                    </ul>
+                    
+                    <br>
+                    <div class="w3-panel w3-note">
+                    <h2>When to Use JavaScript var?</h2><hr>
+                    <p>Always declare JavaScript variables with <code class="w3-codespan">var</code>,<code class="w3-codespan">let</code>,
+                    or<code class="w3-codespan">const</code>.</p>
+                    <p>The <code class="w3-codespan">var</code> keyword is used in all JavaScript code from 1995 to 2015.</p>
+                    <p>The <code class="w3-codespan">let</code> and <code class="w3-codespan">const</code> keywords were added to JavaScript in 2015.</p>
+                    <p>If you want your code to run in older browsers, you must use <code class="w3-codespan">var</code>.</p>
+                    </div>
+                    <br>
+                    <h2>When to Use JavaScript const?</h2><hr>
+                    <p>If you want a general rule: always declare variables with <code class="w3-codespan">const</code>.</p>
+                    <p>If you think the value of the variable can change, use <code class="w3-codespan">let</code>.</p>
+                    <p>In this example, <code class="w3-codespan">price1</code>, <code class="w3-codespan">price2</code>, and <code class="w3-codespan">total</code>, are variables:</p>
 
-                        <br />
-                        
-                        <div
-                          id="mypagediv2"
-                          style="position: relative; text-align: center"
-                        ></div>
-                        <br />
-                      </div>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">const</span> price1 = <span class="jsnumbercolor" style="color:red">5</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">const</span> price2 = <span class="jsnumbercolor" style="color:red">6</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> total = price1 + price2;<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    </div>
+                    <h2>When to Use JavaScript const?</h2><hr>
+                    <p>If you want a general rule: always declare variables with <code class="w3-codespan">const</code>.</p>
+                    <p>If you think the value of the variable can change, use <code class="w3-codespan">let</code>.</p>
+                    <p>In this example, <code class="w3-codespan">price1</code>, <code class="w3-codespan">price2</code>, and <code class="w3-codespan">total</code>, are variables:</p>
+                    
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">const</span> price1 = <span class="jsnumbercolor" style="color:red">5</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">const</span> price2 = <span class="jsnumbercolor" style="color:red">6</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> total = price1 + price2;<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    </div>
+                    <h2>One Statement, Many Variables</h2><hr>
+                    <p>You can declare many variables in one statement.</p>
+                    <p>Start the statement 
+                    with <code class="w3-codespan">let</code> and separate the variables by <strong>comma</strong>:</p>
+                    
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> person = <span class="jsstringcolor" style="color:brown">"John Doe"</span>, carName = <span class="jsstringcolor" style="color:brown">"Volvo"</span>, price = <span class="jsnumbercolor" style="color:red">200</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    <p>A declaration can span multiple lines: </p><hr>
+
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> person = <span class="jsstringcolor" style="color:brown">"John Doe"</span>,<br>
+                    carName = <span class="jsstringcolor" style="color:brown">"Volvo"</span>,<br>
+                    price = <span class="jsnumbercolor" style="color:red">200</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    <br>
+                      
+                    <h2>Value = undefined</h2><hr>
+                    <p>In computer programs, variables are often declared without a value. The value 
+                    can be something that has to be calculated, or something that will be provided 
+                    later, like user input.</p>
+                    <p>A variable declared without a value will have the value <code class="w3-codespan">
+                    undefined</code>.</p>
+                    <p>The variable carName will have the value <code class="w3-codespan">undefined</code> after the execution of this statement:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> carName;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    <br>
+                    <h2>Re-Declaring JavaScript Variables</h2><hr>
+                    <p>If you re-declare a JavaScript variable declared with <code class="w3-codespan">var</code>, it will not lose its value.</p>
+                    <p>The variable <code class="w3-codespan">carName</code> will still have the value "Volvo" after the execution of these statements:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> carName = <span class="jsstringcolor" style="color:brown">"Volvo"</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">var</span> carName;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    <br>
+                    <div class="w3-note">
+                    <h2>Note</h2><hr>
+                    <p>You cannot re-declare a variable declared with <code class="w3-codespan">let</code> or <code class="w3-codespan">const</code>.</p>
+                    <p>This will not work:</p>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> carName = <span class="jsstringcolor" style="color:brown">"Volvo"</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> carName;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    </div>
+                    <br>
+                    
+                    <h2>JavaScript Arithmetic</h2><hr>
+                    <p>As with algebra, you can do arithmetic with JavaScript variables, using 
+                    operators like <code class="w3-codespan">=</code> and <code class="w3-codespan">+</code>: </p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> x = <span class="jsnumbercolor" style="color:red">5</span> + <span class="jsnumbercolor" style="color:red">2</span> + <span class="jsnumbercolor" style="color:red">3</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    <p>You can also add strings, but strings will be concatenated:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> x = <span class="jsstringcolor" style="color:brown">"John"</span> + <span class="jsstringcolor" style="color:brown">" "</span> + <span class="jsstringcolor" style="color:brown">"Doe"</span>; </span></div>
+                    
+                    </div>
+                    
+                    <p>Also try this:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> x = <span class="jsstringcolor" style="color:brown">"5"</span> + <span class="jsnumbercolor" style="color:red">2</span> + <span class="jsnumbercolor" style="color:red">3</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    <br>
+                    <div class="w3-panel w3-note">
+                    <h2>Note</h2><hr>
+                    <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+                    </div>
+                    
+                    <p>Now try this:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> x = <span class="jsnumbercolor" style="color:red">2</span> + <span class="jsnumbercolor" style="color:red">3</span> + <span class="jsstringcolor" style="color:brown">"5"</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    
+                    <hr>
+                    <h2>JavaScript Dollar Sign $</h2><hr> 
+                    
+                    <p>Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> $ = <span class="jsstringcolor" style="color:brown">"Hello World"</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> $$$ = <span class="jsnumbercolor" style="color:red">2</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> $myMoney = <span class="jsnumbercolor" style="color:red">5</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    
+                    <p>Using the dollar sign is not very common in JavaScript,
+                    but professional programmers often use it 
+                    as an alias for the main function in a JavaScript library.</p>
+                    <p>In the JavaScript library jQuery, for instance, the main function
+                    <code class="w3-codespan">$</code> is used to select HTML elements.
+                    In jQuery <code class="w3-codespan">$("p");</code> means "select all p elements".</p> 
+                    <hr>
+                    <h2>JavaScript Underscore (_)</h2><hr>
+                    <p></p><p>Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names:</p>
+                    <div class="w3-example"><br>
+                    <h3>Example</h3><hr>
+                    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> _lastName = <span class="jsstringcolor" style="color:brown">"Johnson"</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> _x = <span class="jsnumbercolor" style="color:red">2</span>;<br>
+                    <span class="jskeywordcolor" style="color:mediumblue">let</span> _100 = <span class="jsnumbercolor" style="color:red">5</span>;<br><span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+                    
+                    </div>
+                    
+                    <p>Using the underscore is not very common in JavaScript,
+                    
+                    but a convention among professional programmers is to use it as an alias for
+                    "private (hidden)" variables.</p>
+                  
                     </div>
                   </div>
                 </div>
-              </div><div class="col-lg-3">
+              </div>
+              <div class="col-lg-3">
                 <!-- Blog Sidebar Start -->
                 <div class="sidebar">
                   <!-- Sidebar Widget Category Start -->
@@ -448,38 +555,41 @@
                     <div class="widget-category">
                       <ul class="category-list">
                         <li>
-                          <a href="cssintroduction.html" class="active"
-                            >CSS Introduction</a
+                          <a href="javaintro.html" class="active">
+                            JavaScript Introduction
+                          </a>
+                        </li>
+                        <br />
+                        <li>
+                          <a href="javawhereuse.html"
+                            >JavaScript Where To Use</a
                           >
                         </li>
                         <br />
                         <li>
-                          <a href="Csssyntax.html">CSS Syntax</a>
+                          <a href="javaoutput.html">JavaScript Output</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSSelectors.html">CSS Selectors</a>
+                          <a href="javastatment.html"> JavaScript Statements</a>
                         </li>
                         <br />
                         <li>
-                          <a href="Csshowtoadd.html">How To Add CSS</a>
+                          <a href="javasyntax.html">JavaScript Syntax</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CssComents.html">CSS Comments</a>
+                          <a href="javacomment.html">JavaScript Comments</a>
                         </li>
                         <br />
                         <li>
-                          <a href="cssbackground.html">CSS Backgrounds</a>
+                          <a href="javavarible.html"> JavaScript Variables</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSBorders.html">CSS Borders</a>
+                          <a href="javaoprator.html">JavaScript Operators</a>
                         </li>
                         <br />
-                        <li><a href="cssmargin.html">CSS Margins</a></li>
-                        <br>
-                        
                       </ul>
                     </div>
                   </div>
@@ -516,10 +626,10 @@
               <h2 class="main-title">
                 Download our mobile <br />
                 app. and start coaching anytime.
-              </h2>
+              </h2><hr>
             </div>
             <!-- Section Title End -->
-
+            <a href="javacomment.html"></a>
             <!-- download App End -->
             <div class="download-app">
               <ul>

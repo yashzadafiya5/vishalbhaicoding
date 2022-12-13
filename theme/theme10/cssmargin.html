@@ -289,7 +289,7 @@
         <div class="container">
           <!-- Page banner Section Start -->
           <div class="page-banner-content">
-            <h2 class="page-title">CSS Comments</h2>
+            <h2 class="page-title">CSS Margin</h2>
           </div>
           <!-- Page banner Section End -->
         </div>
@@ -303,84 +303,106 @@
           <div class="blog-wrapper-02">
             <div class="row flex-row-reverse">
               <div class="col-lg-8">
-                <h1>CSS <span class="color_h1">Comments</span></h1><br>
-                      <p class="intro">
-                        CSS comments are not displayed in the browser, but they
-                        can help document your source code.
-                      </p>
+                <h1>CSS <span class="color_h1">Margins</span></h1>
+                <br />
+
                 <div
                   class="container-fluid mt-5"
                   style="height: 600px; overflow-y: scroll"
                 >
                   <div class="row">
                     <div class="container">
-                      
-                     
-                      <h2>CSS Comments</h2><hr>
-                      <p>
-                        Comments are used to explain the code, and may help when
-                        you edit the source code at a later date.
+                      <h1>CSS <span class="color_h1">Margins</span></h1><hr>
+                      <p class="intro">
+                        Margins are used to create space around elements,
+                        outside of any defined borders.
                       </p>
-                      <p>Comments are ignored by browsers.</p>
-                      <p>
-                        A CSS comment is placed inside the
-                        <code class="w3-codespan">&lt;style&gt;</code> element,
-                        and starts with <code class="w3-codespan">/*</code> and
-                        ends with <code class="w3-codespan">*/</code>:
-                      </p>
+                      <hr />
 
-                      <div class="w3-example"><br>
-                        <h3>Example</h3><hr>
-                        <div class="w3-code notranslate cssHigh">
-                          <span class="cssselectorcolor" style="color: brown">
-                            <span class="commentcolor" style="color: green"
-                              >/* This is a single-line comment */</span
-                            ><br />p
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />
-                              &nbsp; color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                red<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /> </span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            >
-                          </span>
-                        </div>
-                        <a
-                          target="_blank"
-                          href="tryit.asp?filename=trycss_comments"
-                          class="w3-btn w3-margin-bottom"
-                          >Try it Yourself »</a
-                        >
+                      <div
+                        class="w3-theme-border"
+                        style="
+                          border-width: 1px;
+                          border-style: solid;
+                          margin: 70px;
+                          padding: 5px;
+                        "
+                      >
+                        This element has a margin of 70px.
                       </div>
+                      
+                      <h2>CSS Margins</h2><hr>
+                      <p>
+                        The CSS
+                        <code class="w3-codespan">margin</code> properties are
+                        used to create space around elements, outside of any
+                        defined borders.
+                      </p>
+                      <p>
+                        With CSS, you have full control over the margins. There
+                        are properties for setting the margin for each side of
+                        an element (top, right, bottom, and left).
+                      </p>
+                      <hr />
 
-                      <p>You can add comments wherever you want in the code:</p>
+                      <h2>Margin - Individual Sides</h2><hr>  
+                      <p>
+                        CSS has properties for specifying the margin for each
+                        side of an element:
+                      </p>
+                      <ul>
+                        <li><code class="w3-codespan">margin-top</code></li>
+                        <li><code class="w3-codespan">margin-right</code></li>
+                        <li><code class="w3-codespan">margin-bottom</code></li>
+                        <li><code class="w3-codespan">margin-left</code></li>
+                      </ul>
+                      <p>
+                        All the margin properties can have the following values:
+                      </p>
+                      <ul>
+                        <li>auto - the browser calculates the margin</li>
+                        <li>
+                          <em>length</em> - specifies a margin in px, pt, cm,
+                          etc.
+                        </li>
+                        <li>
+                          <em>%</em> - specifies a margin in % of the width of
+                          the containing element
+                        </li>
+                        <li>
+                          inherit - specifies that the margin should be
+                          inherited from the parent element
+                        </li>
+                      </ul>
 
+                      <p><b>Tip:</b> Negative values are allowed.</p>
                       <div class="w3-example"><br>
                         <h3>Example</h3><hr>
+                        <p>
+                          Set different margins for all four sides of a
+                          &lt;p&gt; element:
+                        </p>
                         <div class="w3-code notranslate cssHigh">
                           <span class="cssselectorcolor" style="color: brown">
                             p
                             <span class="cssdelimitercolor" style="color: black"
                               >{</span
                             ><span class="csspropertycolor" style="color: red"
+                              ><br />&nbsp;&nbsp;margin-top<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                100px<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
                               ><br />
-                              &nbsp; color<span
+                              &nbsp;&nbsp;margin-bottom<span
                                 class="csspropertyvaluecolor"
                                 style="color: mediumblue"
                                 ><span
@@ -388,46 +410,13 @@
                                   style="color: black"
                                   >:</span
                                 >
-                                red<span
+                                100px<span
                                   class="cssdelimitercolor"
                                   style="color: black"
                                   >;</span
                                 ></span
-                              >&nbsp;
-                              <span class="commentcolor" style="color: green"
-                                >/* Set text color to red */</span
-                              ><br /> </span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            >
-                          </span>
-                        </div>
-                        <a
-                          target="_blank"
-                          href="tryit.asp?filename=trycss_comments2"
-                          class="w3-btn w3-margin-bottom"
-                          >Try it Yourself »</a
-                        >
-                      </div>
-
-                      <p>Comments can also span multiple lines:&nbsp;</p>
-
-                      <div class="w3-example"><br>
-                        <h3>Example</h3><hr>
-                        <div class="w3-code notranslate cssHigh">
-                          <span class="cssselectorcolor" style="color: brown">
-                            <span class="commentcolor" style="color: green"
-                              >/* This is<br />a multi-line<br />comment
-                              */</span
-                            >
-                            <br /><br />p
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
                               ><br />
-                              &nbsp; color<span
+                              &nbsp;&nbsp;margin-right<span
                                 class="csspropertyvaluecolor"
                                 style="color: mediumblue"
                                 ><span
@@ -435,84 +424,13 @@
                                   style="color: black"
                                   >:</span
                                 >
-                                red<span
+                                150px<span
                                   class="cssdelimitercolor"
                                   style="color: black"
                                   >;</span
                                 ></span
-                              ><br /> </span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            ><br />
-                          </span>
-                        </div>
-                        <a
-                          target="_blank"
-                          href="tryit.asp?filename=trycss_comments3"
-                          class="w3-btn w3-margin-bottom"
-                          >Try it Yourself »</a
-                        >
-                      </div>
-
-                      <hr />
-                      
-                      <h2>HTML and CSS Comments</h2><hr>
-                      <p>
-                        From the HTML tutorial, you learned that you can add
-                        comments to your HTML source by using the
-                        <code class="w3-codespan">&lt;!--...--&gt;</code>
-                        syntax.
-                      </p>
-                      <p>
-                        In the following example, we use a combination of HTML
-                        and CSS comments:
-                      </p>
-                      <div class="w3-example"><br>
-                        <h3>Example</h3><hr>
-                        <div class="w3-code notranslate htmlHigh">
-                          <span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >!DOCTYPE<span
-                              class="attributecolor"
-                              style="color: red"
-                            >
-                              html</span
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >html<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >head<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >style<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><span class="cssselectorcolor" style="color: brown"
-                            ><br />p
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />&nbsp; color<span
+                              ><br />
+                              &nbsp;&nbsp;margin-left<span
                                 class="csspropertyvaluecolor"
                                 style="color: mediumblue"
                                 ><span
@@ -520,133 +438,404 @@
                                   style="color: black"
                                   >:</span
                                 >
-                                red<span
+                                80px<span
                                   class="cssdelimitercolor"
                                   style="color: black"
                                   >;</span
                                 ></span
-                              >
-                              <span class="commentcolor" style="color: green"
-                                >/* Set text color to red */</span
                               ><br /></span
                             ><span
                               class="cssdelimitercolor"
                               style="color: black"
                               >}</span
                             >
-                            <br /></span
-                          ><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/style<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/head<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >body<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><br /><span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >h2<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >My Heading<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/h2<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><br /><span
-                            class="commentcolor"
-                            style="color: green"
-                            >&lt;!-- These paragraphs will be red --&gt;</span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >Hello World!<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >This paragraph is styled with CSS.<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >CSS comments are not shown in the output.<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><br /><span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/body<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/html<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br />
+                          </span>
+                        </div>
+                       
+                      </div>
+                      <hr />
+                     
+                      <h2>Margin - Shorthand Property</h2><hr>
+                      <p>
+                        To shorten the code, it is possible to specify all the
+                        margin properties in one property.
+                      </p>
+                      <p>
+                        The <code class="w3-codespan">margin</code> property is
+                        a shorthand property for the following individual margin
+                        properties:
+                      </p>
+                      <ul>
+                        <li><code class="w3-codespan">margin-top</code></li>
+                        <li><code class="w3-codespan">margin-right</code></li>
+                        <li><code class="w3-codespan">margin-bottom</code></li>
+                        <li><code class="w3-codespan">margin-left</code></li>
+                      </ul>
+
+                      <p>So, here is how it works:</p>
+                      <p>
+                        If the <code class="w3-codespan">margin</code> property
+                        has four values:
+                      </p>
+                      <ul>
+                        <li>
+                          <b>margin: 25px 50px 75px 100px; </b>
+                          <ul>
+                            <li>top margin is 25px</li>
+                            <li>right margin is 50px</li>
+                            <li>bottom margin is 75px</li>
+                            <li>left margin is 100px</li>
+                          </ul>
+                        </li>
+                      </ul><br>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <p>
+                          Use the margin shorthand property with four values:
+                        </p>
+                        <div class="w3-code notranslate cssHigh">
+                          <span class="cssselectorcolor" style="color: brown">
+                            p
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              ><br />&nbsp;&nbsp;margin<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                25px 50px 75px 100px<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br /></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            >
+                          </span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="tryit.asp?filename=trycss_margin_shorthand_4val"
+                          class="w3-btn w3-margin-bottom"
+                          >Try it Yourself »</a
+                        >
+                      </div>
+
+                      <p>
+                        If the <code class="w3-codespan">margin</code> property
+                        has three values:
+                      </p>
+                      <ul>
+                        <li>
+                          <b>margin: 25px 50px 75px;</b>
+                          <ul>
+                            <li>top margin is 25px</li>
+                            <li>right and left margins are 50px</li>
+                            <li>bottom margin is 75px</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <p>
+                          Use the margin shorthand property with three
+                          values:&nbsp;
+                        </p>
+                        <div class="w3-code notranslate cssHigh">
+                          <span class="cssselectorcolor" style="color: brown">
+                            p
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              ><br />&nbsp; margin<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                25px 50px 75px<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br /></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            >
+                          </span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="tryit.asp?filename=trycss_margin_shorthand_3val"
+                          class="w3-btn w3-margin-bottom"
+                          >Try it Yourself »</a
+                        >
+                      </div>
+
+                      <p>
+                        If the <code class="w3-codespan">margin</code> property
+                        has two values:
+                      </p>
+                      <ul>
+                        <li>
+                          <b>margin: 25px 50px;</b>
+                          <ul>
+                            <li>top and bottom margins are 25px</li>
+                            <li>right and left margins are 50px</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <p>
+                          Use the margin shorthand property with two
+                          values:&nbsp;
+                        </p>
+                        <div class="w3-code notranslate cssHigh">
+                          <span class="cssselectorcolor" style="color: brown">
+                            p
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              ><br />&nbsp; margin<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                25px 50px<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br /></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            >
+                          </span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="tryit.asp?filename=trycss_margin_shorthand_2val"
+                          class="w3-btn w3-margin-bottom"
+                          >Try it Yourself »</a
+                        >
+                      </div>
+                      <p>
+                        If the <code class="w3-codespan">margin</code> property
+                        has one value:
+                      </p>
+                      <ul>
+                        <li>
+                          <b>margin: 25px;</b>
+                          <ul>
+                            <li>all four margins are 25px</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <p>
+                          Use the margin shorthand property with one
+                          value:&nbsp;
+                        </p>
+                        <div class="w3-code notranslate cssHigh">
+                          <span class="cssselectorcolor" style="color: brown">
+                            p
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              ><br />&nbsp;&nbsp;margin<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                25px<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br /></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            >
+                          </span>
                         </div>
                         
                       </div>
+                      <br>
+                      <h2>The auto Value</h2><hr>
+                      <p>
+                        You can set the margin property to
+                        <code class="w3-codespan">auto</code> to horizontally
+                        center the element within its container.
+                      </p>
+                      <p>
+                        The element will then take up the specified width, and
+                        the remaining space will be split equally between the
+                        left and right margins.
+                      </p>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <p>Use margin: auto:</p>
+                        <div class="w3-code notranslate cssHigh">
+                          <span class="cssselectorcolor" style="color: brown">
+                            div
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              ><br />&nbsp; width<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                300px<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br />&nbsp; margin<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                auto<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br />&nbsp;&nbsp;border<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                1px solid red<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br /></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            >
+                          </span>
+                        </div>
+                        
+                      </div>
+                      <hr />
+
+                      <h2>The inherit Value</h2><hr>
+                      <p>
+                        This example lets the left margin of the &lt;p
+                        class="ex1"&gt; element be inherited from the parent
+                        element (&lt;div&gt;):
+                      </p>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <p>Use of the inherit value:</p>
+                        <div class="w3-code notranslate cssHigh">
+                          <span class="cssselectorcolor" style="color: brown">
+                            div
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              ><br />&nbsp;&nbsp;border<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                1px solid red<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br />&nbsp;&nbsp;margin-left<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                100px<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br /></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            ><br /><br />p.ex1
+                            <span class="cssdelimitercolor" style="color: black"
+                              >{</span
+                            ><span class="csspropertycolor" style="color: red"
+                              ><br />
+                              &nbsp; margin-left<span
+                                class="csspropertyvaluecolor"
+                                style="color: mediumblue"
+                                ><span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >:</span
+                                >
+                                inherit<span
+                                  class="cssdelimitercolor"
+                                  style="color: black"
+                                  >;</span
+                                ></span
+                              ><br /></span
+                            ><span
+                              class="cssdelimitercolor"
+                              style="color: black"
+                              >}</span
+                            >
+                          </span>
+                        </div>
+                        
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
-              </div><div class="col-lg-3">
+              </div>
+              <div class="col-lg-3">
                 <!-- Blog Sidebar Start -->
                 <div class="sidebar">
                   <!-- Sidebar Widget Category Start -->

@@ -289,7 +289,9 @@
         <div class="container">
           <!-- Page banner Section Start -->
           <div class="page-banner-content">
-            <h2 class="page-title">How To Add CSS</h2>
+            <h2 class="page-title">
+              JavaScript <span class="color_h1">Where To Use</span>
+            </h2>
           </div>
           <!-- Page banner Section End -->
         </div>
@@ -303,45 +305,116 @@
           <div class="blog-wrapper-02">
             <div class="row flex-row-reverse">
               <div class="col-lg-8">
-                <h1><span class="color_h1">How To Add CSS</span></h1>
-                      <p class="intro">
-                        When a browser reads a style sheet, it will format the
-                        HTML document according to the information in the style
-                        sheet.
-                      </p>
+                <h1>JavaScript <span class="color_h1">Where To Use</span></h1>             
+
                 <div
                   class="container-fluid mt-5"
                   style="height: 600px; overflow-y: scroll"
                 >
                   <div class="row">
                     <div class="container">
-                      <h2>Three Ways to Insert CSS</h2><hr>
-                      <p>There are three ways of inserting a style sheet:</p>
-                      <ul>
-                        <li>External CSS</li>
-                        <li>Internal CSS</li>
-                        <li>Inline CSS</li>
-                      </ul>
-                      <hr />
-
-                      <h2>External CSS</h2><hr>
+                      <h2>The &lt;script&gt; Tag</h2><br>
                       <p>
-                        With an external style sheet, you can change the look of
-                        an entire website by changing just one file!
+                        In HTML, JavaScript code is inserted between
+                        <code class="w3-codespan">&lt;script&gt;</code> and
+                        <code class="w3-codespan">&lt;/script&gt;</code> tags.
+                      </p>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate htmlHigh">
+                          <span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><span class="jscolor" style="color: black"
+                            ><br />
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"My First JavaScript"</span
+                            >;<br /> </span
+                          ><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          >
+                        </div>
+                        
+                      </div>
+
+                      <div class="w3-panel w3-note">
+                        <p>
+                          Old JavaScript examples may use a type attribute:
+                          &lt;script type="text/javascript"&gt;.<br />
+                          The type attribute is not required. JavaScript is the
+                          default scripting language in HTML.
+                        </p>
+                      </div>
+
+                      <hr />
+                      <h2>JavaScript Functions and Events</h2><hr>
+                      <p>
+                        A JavaScript
+                        <code class="w3-codespan">function</code> is a block of
+                        JavaScript code, that can be executed when "called" for.
                       </p>
                       <p>
-                        Each HTML page must include a reference to the external
-                        style sheet file inside the &lt;link&gt; element, inside
-                        the head section.
+                        For example, a function can be called when an
+                        <b>event</b> occurs, like when the user clicks a button.
+                      </p>
+                      <div class="w3-panel w3-note">
+                        <p>
+                          You will learn much more about functions and events in
+                          later chapters.
+                        </p>
+                      </div>
+                      <hr />
+
+                      <h2>JavaScript in &lt;head&gt; or &lt;body&gt;</h2><hr>
+                      <p>
+                        You can place any number of scripts in an HTML document.
+                      </p>
+                      <p>
+                        Scripts can be placed in the
+                        <code class="w3-codespan">&lt;body&gt;</code>, or in the
+                        <code class="w3-codespan">&lt;head&gt;</code> section of
+                        an HTML page, or in both.
+                      </p>
+
+                      <br>
+                      <h2>JavaScript in &lt;head&gt;</h2><hr>
+                      <p>
+                        In this example, a JavaScript
+                        <code class="w3-codespan">function</code> is placed in
+                        the
+                        <code class="w3-codespan">&lt;head&gt;</code> section of
+                        an HTML page.
+                      </p>
+                      <p>
+                        The function is invoked (called) when a button is
+                        clicked:
                       </p>
 
                       <div class="w3-example"><br>
                         <h3>Example</h3><hr>
-                        <p>
-                          External styles are defined within the &lt;link&gt;
-                          element, inside the &lt;head&gt; section of an HTML
-                          page:
-                        </p>
                         <div class="w3-code notranslate htmlHigh">
                           <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
@@ -352,226 +425,19 @@
                             >
                               html</span
                             ><span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >html<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >head<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >link<span
-                              class="attributecolor"
-                              style="color: red"
-                            >
-                              rel<span
-                                class="attributevaluecolor"
-                                style="color: mediumblue"
-                                >="stylesheet"</span
-                              >
-                              href<span
-                                class="attributevaluecolor"
-                                style="color: mediumblue"
-                                >="mystyle.css"</span
-                              ></span
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/head<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >body<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><br /><span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >h1<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >This is a heading<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/h1<span class="tagcolor" style="color: mediumblue"
                               >&gt;</span
                             ></span
                           ><br />
                           <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >This is a paragraph.<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><br /><span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/body<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/html<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >
-                        </div>
-                        
-                      </div>
-
-                      <p>
-                        An external style sheet can be written in any text
-                        editor, and must be saved with a .css extension.
-                      </p>
-                      <p>
-                        The external .css file should not contain any HTML tags.
-                      </p>
-                      <p>Here is how the "mystyle.css" file looks:</p><br>
-                      <div class="w3-example"><br>
-                        <h3>"mystyle.css"</h3><hr>
-                        <div class="w3-code notranslate cssHigh">
-                          <span class="cssselectorcolor" style="color: brown">
-                            body
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />&nbsp;&nbsp;background-color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                lightblue<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /></span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            ><br /><br />h1
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />&nbsp;&nbsp;color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                navy<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br />&nbsp;&nbsp;margin-left<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                20px<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /></span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            >
-                          </span>
-                        </div>
-                      </div>    
-                      <hr />
-                      
-                        <h2>Internal CSS</h2><hr>
-                      <p>
-                        An internal style sheet may be used if one single HTML
-                        page has a unique style.
-                      </p>
-                      <p>
-                        The internal style is defined inside the &lt;style&gt;
-                        element, inside the head section.
-                      </p>
-                      <div class="w3-example"><br>
-                        <h3>Example</h3><hr>
-                        <p>
-                          Internal styles are defined within the &lt;style&gt;
-                          element, inside the &lt;head&gt; section of an HTML
-                          page:
-                        </p>
-                        <div class="w3-code notranslate htmlHigh">
-                          <span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >!DOCTYPE<span
-                              class="attributecolor"
-                              style="color: red"
-                            >
-                              html</span
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
                             >html<span
                               class="tagcolor"
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
+                          ><br />
+                          <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
                             >head<span
@@ -579,83 +445,57 @@
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
+                          ><br />
+                          <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >style<span
+                            >script<span
                               class="tagcolor"
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><span class="cssselectorcolor" style="color: brown"
-                            ><br />body
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />&nbsp; background-color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                linen<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /></span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            ><br /><br />h1
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />&nbsp; color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                maroon<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br />&nbsp; margin-left<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                40px<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /></span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
+                          ><span class="jscolor" style="color: black"
+                            ><br />
+                            <span
+                              class="jskeywordcolor"
+                              style="color: mediumblue"
+                              >function</span
                             >
-                            <br /></span
+                            myFunction() {<br /><span
+                              class="jsnumbercolor"
+                              style="color: red"
+                            >
+                            </span
+                            >&nbsp;&nbsp;document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"Paragraph changed."</span
+                            >;<br /><span
+                              class="jsnumbercolor"
+                              style="color: red"
+                            >
+                            </span
+                            >}<br /> </span
                           ><span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >/style<span
+                            >/script<span
                               class="tagcolor"
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
+                          ><br />
+                          <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
                             >/head<span
@@ -671,76 +511,123 @@
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><br /><span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >h1<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >This is a heading<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/h1<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          >This is a paragraph.<span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/p<span class="tagcolor" style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><br /><span
-                            class="tagnamecolor"
-                            style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/body<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/html<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
                           >
+                          <p>
+                            <span class="tagnamecolor" style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >h2<span
+                                class="tagcolor"
+                                style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            >Demo JavaScript in Head<span
+                              class="tagnamecolor"
+                              style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >/h2<span
+                                class="tagcolor"
+                                style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            ><br />
+                            <br />
+                            <span class="tagnamecolor" style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >p<span class="attributecolor" style="color: red">
+                                id<span
+                                  class="attributevaluecolor"
+                                  style="color: mediumblue"
+                                  >="demo"</span
+                                ></span
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            >A Paragraph<span
+                              class="tagnamecolor"
+                              style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >/p<span
+                                class="tagcolor"
+                                style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            ><br /><span
+                              class="tagnamecolor"
+                              style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >button<span
+                                class="attributecolor"
+                                style="color: red"
+                              >
+                                type<span
+                                  class="attributevaluecolor"
+                                  style="color: mediumblue"
+                                  >="button"</span
+                                >
+                                onclick<span
+                                  class="attributevaluecolor"
+                                  style="color: mediumblue"
+                                  >="myFunction()"</span
+                                ></span
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            >Try it<span
+                              class="tagnamecolor"
+                              style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >/button<span
+                                class="tagcolor"
+                                style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            >
+                          </p>
+                          <p>
+                            <span class="tagnamecolor" style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >/body<span
+                                class="tagcolor"
+                                style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            ><br />
+                            <span class="tagnamecolor" style="color: brown"
+                              ><span class="tagcolor" style="color: mediumblue"
+                                >&lt;</span
+                              >/html<span
+                                class="tagcolor"
+                                style="color: mediumblue"
+                                >&gt;</span
+                              ></span
+                            >
+                          </p>
                         </div>
                         
                       </div>
                       <hr />
-
-                      <h2>Inline CSS</h2><hr>
+                      
+                      <h2>JavaScript in &lt;body&gt;</h2><br>
                       <p>
-                        An inline style may be used to apply a unique style for
-                        a single element.
+                        In this example, a JavaScript
+                        <code class="w3-codespan">function</code> is placed in
+                        the
+                        <code class="w3-codespan">&lt;body&gt;</code> section of
+                        an HTML page.
                       </p>
                       <p>
-                        To use inline styles, add the style attribute to the
-                        relevant element. The style attribute can contain any
-                        CSS property.
+                        The function is invoked (called) when a button is
+                        clicked:
                       </p>
                       <div class="w3-example"><br>
                         <h3>Example</h3><hr>
-                        <p>
-                          Inline styles are defined within the "style" attribute
-                          of the relevant element:
-                        </p>
                         <div class="w3-code notranslate htmlHigh">
                           <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
@@ -753,7 +640,8 @@
                             ><span class="tagcolor" style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
+                          ><br />
+                          <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
                             >html<span
@@ -761,7 +649,8 @@
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
+                          ><br />
+                          <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
                             >body<span
@@ -769,41 +658,38 @@
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><br /><span
+                          >
+                          <br /><br /><span
                             class="tagnamecolor"
                             style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >h1<span class="attributecolor" style="color: red">
-                              style<span
-                                class="attributevaluecolor"
-                                style="color: mediumblue"
-                                >="color:blue;text-align:center;"</span
-                              ></span
-                            ><span class="tagcolor" style="color: mediumblue"
+                            >h2<span class="tagcolor" style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          >This is a heading<span
+                          >Demo JavaScript in Body<span
                             class="tagnamecolor"
                             style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >/h1<span class="tagcolor" style="color: mediumblue"
+                            >/h2<span class="tagcolor" style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
+                          ><br />
+                          <br />
+                          <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
                             >p<span class="attributecolor" style="color: red">
-                              style<span
+                              id<span
                                 class="attributevaluecolor"
                                 style="color: mediumblue"
-                                >="color:red;"</span
+                                >="demo"</span
                               ></span
                             ><span class="tagcolor" style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          >This is a paragraph.<span
+                          >A Paragraph<span
                             class="tagnamecolor"
                             style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
@@ -811,8 +697,87 @@
                             >/p<span class="tagcolor" style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><br />
+                          ><br />
+                          <br />
                           <span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >button<span
+                              class="attributecolor"
+                              style="color: red"
+                            >
+                              type<span
+                                class="attributevaluecolor"
+                                style="color: mediumblue"
+                                >="button"</span
+                              >
+                              onclick<span
+                                class="attributevaluecolor"
+                                style="color: mediumblue"
+                                >="myFunction()"</span
+                              ></span
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          >Try it<span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/button<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><br />
+                          <br /><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><span class="jscolor" style="color: black"
+                            ><br />
+                            <span
+                              class="jskeywordcolor"
+                              style="color: mediumblue"
+                              >function</span
+                            >
+                            myFunction() {<br /><span
+                              class="jsnumbercolor"
+                              style="color: red"
+                            >
+                            </span>
+                            &nbsp; document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"Paragraph changed."</span
+                            >;<br /><span
+                              class="jsnumbercolor"
+                              style="color: red"
+                            >
+                            </span
+                            >}<br /> </span
+                          ><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><br />
+                          <br /><span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
                             >/body<span
@@ -820,7 +785,8 @@
                               style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
+                          ><br />
+                          <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
                             >/html<span
@@ -830,181 +796,97 @@
                             ></span
                           >
                         </div>
+                        
                       </div>
+
                       <div class="w3-panel w3-note">
                         <p>
-                          <strong>Tip:</strong> An inline style loses many of
-                          the advantages of a style sheet (by mixing content
-                          with presentation). Use this method sparingly.
+                          Placing scripts at the bottom of the &lt;body&gt;
+                          element improves the display speed, because script
+                          interpretation slows down the display.
                         </p>
                       </div>
 
-                      <hr />
+                      <br>
+                      <h2>External JavaScript</h2><hr>
+                      <p>Scripts can also be placed in external files:</p><br>
+                      <div class="w3-example">
+                        <h3>External file: myScript.js</h3><br>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black">
+                            <span
+                              class="jskeywordcolor"
+                              style="color: mediumblue"
+                              >function</span
+                            >
+                            myFunction() {<br /><span
+                              class="jsnumbercolor"
+                              style="color: red"
+                            >
+                            </span
+                            >&nbsp; document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"demo"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"Paragraph changed."</span
+                            >;<br /><span
+                              class="jsnumbercolor"
+                              style="color: red"
+                            >
+                            </span
+                            >}<span class="jsnumbercolor" style="color: red">
+                            </span>
+                          </span>
+                        </div>
+                      </div>
 
-                      <h2>Multiple Style Sheets</h2><hr>
                       <p>
-                        If some properties have been defined for the same
-                        selector (element) in different style sheets, the value
-                        from the last read style sheet will be used.&nbsp;
+                        External scripts are practical when the same code is
+                        used in many different web pages.
                       </p>
-                      <div class="w3-example">
-                        <p>
-                          Assume that an
-                          <strong>external style sheet</strong> has the
-                          following style for the &lt;h1&gt; element:
-                        </p>
-                        <div class="w3-code notranslate cssHigh">
-                          <span class="cssselectorcolor" style="color: brown">
-                            h1
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />
-                              &nbsp;&nbsp;color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                navy<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /> </span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            >
-                          </span>
-                        </div>
-                      </div>
-
-                      <div class="w3-example">
-                        <p>
-                          Then, assume that an
-                          <strong>internal style sheet</strong> also has the
-                          following style for the &lt;h1&gt; element:
-                        </p>
-                        <div class="w3-code notranslate cssHigh">
-                          <span class="cssselectorcolor" style="color: brown">
-                            h1
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />
-                              &nbsp;&nbsp;color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                orange<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              >&nbsp;&nbsp;&nbsp; <br /></span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            >
-                          </span>
-                        </div>
-                      </div>
-
+                      <p>
+                        JavaScript files have the file extension
+                        <strong>.js</strong>.
+                      </p>
+                      <p>
+                        To use an external script, put the name of the script
+                        file in the
+                        <code class="w3-codespan">src</code> (source) attribute
+                        of a
+                        <code class="w3-codespan">&lt;script&gt;</code> tag:
+                      </p>
                       <div class="w3-example"><br>
                         <h3>Example</h3><hr>
-                        <p>
-                          If the internal style is defined
-                          <strong>after</strong> the link to the external style
-                          sheet, the &lt;h1&gt; elements will be "orange":
-                        </p>
                         <div class="w3-code notranslate htmlHigh">
                           <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >head<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >link<span
+                            >script<span
                               class="attributecolor"
                               style="color: red"
                             >
-                              rel<span
+                              src<span
                                 class="attributevaluecolor"
                                 style="color: mediumblue"
-                                >="stylesheet"</span
-                              >
-                              type<span
-                                class="attributevaluecolor"
-                                style="color: mediumblue"
-                                >="text/css"</span
-                              >
-                              href<span
-                                class="attributevaluecolor"
-                                style="color: mediumblue"
-                                >="mystyle.css"</span
+                                >="myScript.js"</span
                               ></span
                             ><span class="tagcolor" style="color: mediumblue"
                               >&gt;</span
                             ></span
-                          ><br />
-                          <span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >style<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><span class="cssselectorcolor" style="color: brown"
-                            ><br />h1
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />&nbsp;&nbsp;color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                orange<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /></span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            ><br /></span
+                          ><span class="jscolor" style="color: black"></span
                           ><span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >/style<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/head<span
+                            >/script<span
                               class="tagcolor"
                               style="color: mediumblue"
                               >&gt;</span
@@ -1013,92 +895,139 @@
                         </div>
                         
                       </div>
+
+                      <p>
+                        You can place an external script reference in
+                        <code class="w3-codespan">&lt;head&gt;</code> or
+                        <code class="w3-codespan">&lt;body&gt;</code> as you
+                        like.
+                      </p>
+                      <p>
+                        The script will behave as if it was located exactly
+                        where the
+                        <code class="w3-codespan">&lt;script&gt;</code> tag is
+                        located.
+                      </p>
+
+                      <div class="w3-panel w3-note">
+                        <p>
+                          External scripts cannot contain
+                          <code class="w3-codespan">&lt;script&gt;</code> tags.
+                        </p>
+                      </div>
+
+                      <hr />
+                      <h2>External JavaScript Advantages</h2><hr>
+                      <p>
+                        Placing scripts in external files has some advantages:
+                      </p>
+                      <ul>
+                        <li>It separates HTML and code</li>
+                        <li>
+                          It makes HTML and JavaScript easier to read and
+                          maintain
+                        </li>
+                        <li>Cached JavaScript files can speed up page loads</li>
+                      </ul>
+                      <p>
+                        To add several script files to one page&nbsp; - use
+                        several script tags:
+                      </p>
                       <div class="w3-example"><br>
                         <h3>Example</h3><hr>
-                        <p>
-                          However, if the internal style is defined
-                          <strong>before</strong> the link to the external style
-                          sheet, the &lt;h1&gt; elements will be "navy":&nbsp;
-                        </p>
-                        <div class="w3-code notranslate htmlHigh htmlHigh">
+                        <div class="w3-code notranslate htmlHigh">
                           <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >head<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >style<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><span class="cssselectorcolor" style="color: brown"
-                            ><br />h1
-                            <span class="cssdelimitercolor" style="color: black"
-                              >{</span
-                            ><span class="csspropertycolor" style="color: red"
-                              ><br />&nbsp;&nbsp;color<span
-                                class="csspropertyvaluecolor"
-                                style="color: mediumblue"
-                                ><span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >:</span
-                                >
-                                orange<span
-                                  class="cssdelimitercolor"
-                                  style="color: black"
-                                  >;</span
-                                ></span
-                              ><br /></span
-                            ><span
-                              class="cssdelimitercolor"
-                              style="color: black"
-                              >}</span
-                            ><br /></span
-                          ><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >/style<span
-                              class="tagcolor"
-                              style="color: mediumblue"
-                              >&gt;</span
-                            ></span
-                          ><br /><span class="tagnamecolor" style="color: brown"
-                            ><span class="tagcolor" style="color: mediumblue"
-                              >&lt;</span
-                            >link<span
+                            >script<span
                               class="attributecolor"
                               style="color: red"
                             >
-                              rel<span
+                              src<span
                                 class="attributevaluecolor"
                                 style="color: mediumblue"
-                                >="stylesheet"</span
-                              >
-                              type<span
-                                class="attributevaluecolor"
-                                style="color: mediumblue"
-                                >="text/css"</span
-                              >
-                              href<span
-                                class="attributevaluecolor"
-                                style="color: mediumblue"
-                                >="mystyle.css"</span
+                                >="myScript1.js"</span
                               ></span
                             ><span class="tagcolor" style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><span class="jscolor" style="color: black"></span
+                          ><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
                               >&gt;</span
                             ></span
                           ><br />
                           <span class="tagnamecolor" style="color: brown"
                             ><span class="tagcolor" style="color: mediumblue"
                               >&lt;</span
-                            >/head<span
+                            >script<span
+                              class="attributecolor"
+                              style="color: red"
+                            >
+                              src<span
+                                class="attributevaluecolor"
+                                style="color: mediumblue"
+                                >="myScript2.js"</span
+                              ></span
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><span class="jscolor" style="color: black"></span
+                          ><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          >
+                        </div>
+                      </div>
+
+                      <hr />
+                      <h2>External References</h2><hr>
+                      <p>
+                        An external script can be referenced in 3 different
+                        ways:
+                      </p>
+                      <ul>
+                        <li>With a full URL (a full web address)</li>
+                        <li>With a file path (like /js/)</li>
+                        <li>Without any path</li>
+                      </ul>
+
+                      <p>
+                        This example uses a <b>full URL</b> to link to
+                        myScript.js:
+                      </p>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate htmlHigh">
+                          <span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >script<span
+                              class="attributecolor"
+                              style="color: red"
+                            >
+                              src<span
+                                class="attributevaluecolor"
+                                style="color: mediumblue"
+                                >="https://www.w3schools.com/js/myScript.js"</span
+                              ></span
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><span class="jscolor" style="color: black"></span
+                          ><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/script<span
                               class="tagcolor"
                               style="color: mediumblue"
                               >&gt;</span
@@ -1107,36 +1036,95 @@
                         </div>
                         
                       </div>
-                      <hr />
 
-                      <h2>Cascading Order</h2><hr>
                       <p>
-                        What style will be used when there is more than one
-                        style specified for an HTML element?
+                        This example uses a <b>file path</b> to link to
+                        myScript.js:
                       </p>
-                      <p>
-                        All the styles in a page will "cascade" into a new
-                        "virtual" style sheet by the following rules, where
-                        number one has the highest priority:
-                      </p>
-                      <ol>
-                        <li>Inline style (inside an HTML element)</li>
-                        <li>
-                          External and internal style sheets (in the head
-                          section)
-                        </li>
-                        <li>Browser default</li>
-                      </ol>
-                      <p>
-                        So, an inline style has the highest priority, and will
-                        override external and internal styles and browser
-                        defaults.
-                      </p>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate htmlHigh">
+                          <span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >script<span
+                              class="attributecolor"
+                              style="color: red"
+                            >
+                              src<span
+                                class="attributevaluecolor"
+                                style="color: mediumblue"
+                                >="/js/myScript.js"</span
+                              ></span
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><span class="jscolor" style="color: black"></span
+                          ><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          >
+                        </div>
+                        
+                      </div>
+
+                      <p>This example uses no path to link to myScript.js:</p>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate htmlHigh">
+                          <span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >script<span
+                              class="attributecolor"
+                              style="color: red"
+                            >
+                              src<span
+                                class="attributevaluecolor"
+                                style="color: mediumblue"
+                                >="myScript.js"</span
+                              ></span
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          ><span class="jscolor" style="color: black"></span
+                          ><span class="tagnamecolor" style="color: brown"
+                            ><span class="tagcolor" style="color: mediumblue"
+                              >&lt;</span
+                            >/script<span
+                              class="tagcolor"
+                              style="color: mediumblue"
+                              >&gt;</span
+                            ></span
+                          >
+                        </div>
                        
+                      </div>
+
+                      <div class="w3-panel w3-note">
+                        <p>
+                          You can read more about file paths in the chapter
+                          <a href="/html/html_filepaths.asp">HTML File Paths</a
+                          >.
+                        </p>
+                      </div>
+
+                      <br />
+                      
+                      <div
+                        id="mypagediv2"
+                        style="position: relative; text-align: center"
+                      ></div>
                     </div>
                   </div>
                 </div>
-              </div><div class="col-lg-3">
+              </div>
+              <div class="col-lg-3">
                 <!-- Blog Sidebar Start -->
                 <div class="sidebar">
                   <!-- Sidebar Widget Category Start -->
@@ -1146,38 +1134,41 @@
                     <div class="widget-category">
                       <ul class="category-list">
                         <li>
-                          <a href="cssintroduction.html" class="active"
-                            >CSS Introduction</a
+                          <a href="javaintro.html" class="active">
+                            JavaScript Introduction
+                          </a>
+                        </li>
+                        <br />
+                        <li>
+                          <a href="javawhereuse.html"
+                            >JavaScript Where To Use</a
                           >
                         </li>
                         <br />
                         <li>
-                          <a href="Csssyntax.html">CSS Syntax</a>
+                          <a href="javaoutput.html">JavaScript Output</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSSelectors.html">CSS Selectors</a>
+                          <a href="javastatment.html"> JavaScript Statements</a>
                         </li>
                         <br />
                         <li>
-                          <a href="Csshowtoadd.html">How To Add CSS</a>
+                          <a href="javasyntax.html">JavaScript Syntax</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CssComents.html">CSS Comments</a>
+                          <a href="javacomment.html">JavaScript Comments</a>
                         </li>
                         <br />
                         <li>
-                          <a href="cssbackground.html">CSS Backgrounds</a>
+                          <a href="javavarible.html"> JavaScript Variables</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSBorders.html">CSS Borders</a>
+                          <a href="javaoprator.html">JavaScript Operators</a>
                         </li>
                         <br />
-                        <li><a href="cssmargin.html">CSS Margins</a></li>
-                        <br>
-                        
                       </ul>
                     </div>
                   </div>

@@ -289,7 +289,10 @@
         <div class="container">
           <!-- Page banner Section Start -->
           <div class="page-banner-content">
-            <h2 class="page-title">CSS Syntax</h2>
+            <h2 class="page-title">
+              JavaScript <span class="color_h1">Comments</span>
+            </h2>
+
           </div>
           <!-- Page banner Section End -->
         </div>
@@ -303,142 +306,276 @@
           <div class="blog-wrapper-02">
             <div class="row flex-row-reverse">
               <div class="col-lg-8">
-                <h1>CSS <span class="color_h1">Syntax</span></h1>
-                <br />
-                <p class="intro">
-                  A CSS rule consists of a selector and a declaration block.
-                </p>
+                <h1>JavaScript <span class="color_h1">Comments</span></h1>
                 <div
                   class="container-fluid mt-5"
                   style="height: 600px; overflow-y: scroll"
                 >
                   <div class="row">
                     <div class="container">
-                      <div class="w3-col l10 m12" id="main">
-                        
-                        <div
-                          style="
-                            background-color: white;
-                            padding: 1px 8px;
-                            border-radius: 5px;
-                          "
-                        >
-                          <p>
-                            <img
-                              src="https://www.w3schools.com/css/img_selector.gif"
-                              alt="CSS selector"
-                              class="w3-image"
-                            />
-                          </p>
-                        </div>
-                        <p>
-                          The selector points to the HTML element you want to
-                          style.
-                        </p>
-                        <p>
-                          The declaration block contains one or more
-                          declarations separated by semicolons.
-                        </p>
-                        <p>
-                          Each declaration includes a CSS property name and a
-                          value, separated by a colon.
-                        </p>
-                        <p>
-                          Multiple CSS declarations are separated with
-                          semicolons, and declaration blocks are surrounded by
-                          curly braces.
-                        </p><br>
-                        <div class="w3-example">
-                          <h3>Example</h3><hr>
-                          <p>
-                            In this example all &lt;p&gt; elements will be
-                            center-aligned, with a red text color:
-                          </p>
-                          <div class="w3-code notranslate cssHigh">
-                            <span class="cssselectorcolor" style="color: brown">
-                              p
-                              <span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >{</span
-                              ><span class="csspropertycolor" style="color: red"
-                                ><br />
-                                &nbsp;&nbsp;color<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  red<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br />
-                                &nbsp;&nbsp;text-align<span
-                                  class="csspropertyvaluecolor"
-                                  style="color: mediumblue"
-                                  ><span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >:</span
-                                  >
-                                  center<span
-                                    class="cssdelimitercolor"
-                                    style="color: black"
-                                    >;</span
-                                  ></span
-                                ><br /> </span
-                              ><span
-                                class="cssdelimitercolor"
-                                style="color: black"
-                                >}</span
-                              >
-                            </span>
-                          </div>
-                          
-                        </div><br>
-                        <h2>Example Explained</h2><hr>
-                        <ul>
-                          <li>
-                            <code class="w3-codespan">p</code> is a selector in
-                            CSS (it points to the HTML element you want to
-                            style: &lt;p&gt;).
-                          </li>
-                          <li>
-                            <code class="w3-codespan">color</code> is a
-                            property, and
-                            <code class="w3-codespan">red</code> is the property
-                            value
-                          </li>
-                          <li>
-                            <code class="w3-codespan">text-align</code> is a
-                            property, and
-                            <code class="w3-codespan">center</code> is the
-                            property value
-                          </li>
-                        </ul>
-                        <div class="w3-note w3-panel">
-                          <p>
-                            You will learn much more about CSS selectors and CSS
-                            properties in the next chapters!
-                          </p>
-                        </div>
+                      <h1>JavaScript <span class="color_h1">Comments</span></h1>
+                      <hr>
+                      <p class="intro">
+                        JavaScript comments can be used to explain JavaScript
+                        code, and to make it more readable.
+                      </p>
+                      <p class="intro">
+                        JavaScript comments can also be used to prevent
+                        execution, when testing alternative code.
+                      </p>
+                      <br>
 
-                        <br />
+                      <h2>Single Line Comments</h2><hr>
+                      <p>
+                        Single line comments start with
+                        <code class="w3-codespan">//</code>.
+                      </p>
+                      <p>
+                        Any text between <code class="w3-codespan">//</code> and
+                        the end of the line will be ignored by JavaScript (will
+                        not be executed).
+                      </p>
+                      <p>
+                        This example uses a single-line comment before each code
+                        line:
+                      </p>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span
+                            ><span class="commentcolor" style="color: green"
+                              >// Change heading:<br
+                            /></span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"myH"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"My First Page"</span
+                            >;<br /><br /><span
+                              class="jsnumbercolor"
+                              style="color: red"
+                            >
+                            </span
+                            ><span class="commentcolor" style="color: green"
+                              >// Change paragraph:<br
+                            /></span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"myP"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"My first paragraph."</span
+                            >;<span class="jsnumbercolor" style="color: red">
+                            </span>
+                          </span>
+                        </div>
                         
-                        <div
-                          id="mypagediv2"
-                          style="position: relative; text-align: center"
-                        ></div>
-                        <br />
+                      </div>
+                      <p>
+                        This example uses a single line comment at the end of
+                        each line to explain the code:
+                      </p>
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black">
+                            <span
+                              class="jskeywordcolor"
+                              style="color: mediumblue"
+                              >let</span
+                            >
+                            x =
+                            <span class="jsnumbercolor" style="color: red"
+                              >5</span
+                            >;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="commentcolor" style="color: green"
+                              >// Declare x, give it the value of 5<br
+                            /></span>
+                            <span
+                              class="jskeywordcolor"
+                              style="color: mediumblue"
+                              >let</span
+                            >
+                            y = x +
+                            <span class="jsnumbercolor" style="color: red"
+                              >2</span
+                            >;&nbsp;
+                            <span class="commentcolor" style="color: green"
+                              >// Declare y, give it the value of x + 2
+                            </span></span
+                          >
+                        </div>
+                        
+                      </div>
+                      <br />
+                      <h2>Multi-line Comments</h2><hr>
+                      <p>
+                        Multi-line comments start with
+                        <code class="w3-codespan">/*</code> and end with
+                        <code class="w3-codespan">*/</code>.
+                      </p>
+                      <p>
+                        Any text between <code class="w3-codespan">/*</code> and
+                        <code class="w3-codespan">*/</code> will be ignored by
+                        JavaScript.
+                      </p>
+                      <p>
+                        This example uses a multi-line comment (a comment block)
+                        to explain the code:
+                      </p>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span
+                            ><span class="commentcolor" style="color: green"
+                              >/*<br />
+                              The code below will change<br />
+                              the heading with id = "myH"<br />
+                              and the paragraph with id = "myP"<br />
+                              in my web page:<br />
+                              */</span
+                            ><br />
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"myH"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"My First Page"</span
+                            >;<br />
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"myP"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"My first paragraph."</span
+                            >;<span class="jsnumbercolor" style="color: red">
+                            </span>
+                          </span>
+                        </div>
+                        
+                      </div>
+
+                      <div class="w3-panel w3-note">
+                        <p>
+                          It is most common to use single line comments.<br />Block
+                          comments are often used for formal documentation.
+                        </p>
+                      </div>
+                      <br />
+                      <h2>Using Comments to Prevent Execution</h2><hr>
+                      <p>
+                        Using comments to prevent execution of code is suitable
+                        for code testing.
+                      </p>
+
+                      <p>
+                        Adding <code class="w3-codespan">//</code> in front of a
+                        code line changes the code lines from an executable line
+                        to a comment.
+                      </p>
+                      <p>
+                        This example uses // to prevent execution of one of the
+                        code lines:
+                      </p>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span
+                            ><span class="commentcolor" style="color: green"
+                              >//document.getElementById("myH").innerHTML = "My
+                              First Page";<br
+                            /></span>
+                            document.<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >getElementById</span
+                            >(<span class="jsstringcolor" style="color: brown"
+                              >"myP"</span
+                            >).<span
+                              class="jspropertycolor"
+                              style="color: black"
+                              >innerHTML</span
+                            >
+                            =
+                            <span class="jsstringcolor" style="color: brown"
+                              >"My first paragraph."</span
+                            >;<span class="jsnumbercolor" style="color: red">
+                            </span>
+                          </span>
+                        </div>
+                        
+                      </div>
+
+                      <p>
+                        This example uses a comment block to prevent execution
+                        of multiple lines:
+                      </p>
+
+                      <div class="w3-example"><br>
+                        <h3>Example</h3><hr>
+                        <div class="w3-code notranslate jsHigh">
+                          <span class="jscolor" style="color: black"
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span
+                            ><span class="commentcolor" style="color: green"
+                              >/*<br />
+                              document.getElementById("myH").innerHTML = "My
+                              First Page";<br />
+                              document.getElementById("myP").innerHTML = "My
+                              first paragraph.";<br />
+                              */</span
+                            ><span class="jsnumbercolor" style="color: red">
+                            </span>
+                          </span>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
-              </div><div class="col-lg-3">
+              </div>
+              <div class="col-lg-3">
                 <!-- Blog Sidebar Start -->
                 <div class="sidebar">
                   <!-- Sidebar Widget Category Start -->
@@ -448,38 +585,41 @@
                     <div class="widget-category">
                       <ul class="category-list">
                         <li>
-                          <a href="cssintroduction.html" class="active"
-                            >CSS Introduction</a
+                          <a href="javaintro.html" class="active">
+                            JavaScript Introduction
+                          </a>
+                        </li>
+                        <br />
+                        <li>
+                          <a href="javawhereuse.html"
+                            >JavaScript Where To Use</a
                           >
                         </li>
                         <br />
                         <li>
-                          <a href="Csssyntax.html">CSS Syntax</a>
+                          <a href="javaoutput.html">JavaScript Output</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSSelectors.html">CSS Selectors</a>
+                          <a href="javastatment.html"> JavaScript Statements</a>
                         </li>
                         <br />
                         <li>
-                          <a href="Csshowtoadd.html">How To Add CSS</a>
+                          <a href="javasyntax.html">JavaScript Syntax</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CssComents.html">CSS Comments</a>
+                          <a href="javacomment.html">JavaScript Comments</a>
                         </li>
                         <br />
                         <li>
-                          <a href="cssbackground.html">CSS Backgrounds</a>
+                          <a href="javavarible.html"> JavaScript Variables</a>
                         </li>
                         <br />
                         <li>
-                          <a href="CSSBorders.html">CSS Borders</a>
+                          <a href="javaoprator.html">JavaScript Operators</a>
                         </li>
                         <br />
-                        <li><a href="cssmargin.html">CSS Margins</a></li>
-                        <br>
-                        
                       </ul>
                     </div>
                   </div>
@@ -516,10 +656,10 @@
               <h2 class="main-title">
                 Download our mobile <br />
                 app. and start coaching anytime.
-              </h2>
+              </h2><hr>
             </div>
             <!-- Section Title End -->
-
+            <a href="javacomment.html"></a>
             <!-- download App End -->
             <div class="download-app">
               <ul>
